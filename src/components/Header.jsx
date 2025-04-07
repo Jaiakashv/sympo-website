@@ -1,15 +1,19 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Flame } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
 
   // Function to detect active section based on scroll position
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'schedule', 'events', 'register'];
+      
+      // Detect scrolling to add background effect
+      setScrolled(window.scrollY > 20);
       
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -34,14 +38,21 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-dragon-black/80 backdrop-blur-md border-b border-dragon-fire/20">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-dragon-black/90 backdrop-blur-md shadow-lg shadow-dragon-fire/10 py-2' 
+        : 'bg-transparent py-4'
+    }`}>
+      <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/226d236f-9149-4ff6-adcb-6088d5053c46.png" 
-            alt="Miralenzan Logo" 
-            className="h-12 md:h-16 rounded-full border-2 border-dragon-fire/40"
-          />
+          <div className={`relative group ${scrolled ? 'scale-90' : ''} transition-all duration-300`}>
+            <div className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity animate-pulse"></div>
+            <img 
+              src="/lovable-uploads/226d236f-9149-4ff6-adcb-6088d5053c46.png" 
+              alt="Miralenzan Logo" 
+              className="h-12 md:h-16 rounded-full border-2 border-dragon-fire/40 relative z-10 transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
         </div>
 
         {/* Desktop Menu */}
@@ -54,15 +65,18 @@ const Header = () => {
               <a 
                 key={item} 
                 href={`#${lowercaseItem}`}
-                className={`text-lg font-medium transition-all duration-200 ${
+                className={`text-lg font-medium transition-all duration-300 relative overflow-hidden ${
                   isActive 
                     ? 'text-dragon-fire scale-105 font-bold' 
                     : 'text-dragon-cream hover:text-dragon-fire'
                 }`}
               >
-                {item}
+                <span className="relative z-10">{item}</span>
                 {isActive && (
-                  <div className="h-1 w-full bg-dragon-fire rounded-full mt-1 animate-pulse"></div>
+                  <>
+                    <div className="h-1 w-full bg-gradient-to-r from-dragon-orange to-dragon-red rounded-full mt-1 animate-pulse"></div>
+                    <Flame className="absolute -right-6 -bottom-6 text-dragon-fire/20 animate-flame" size={40} />
+                  </>
                 )}
               </a>
             );
@@ -71,7 +85,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-dragon-cream hover:text-dragon-fire"
+          className="md:hidden text-dragon-cream hover:text-dragon-fire transition-colors duration-300"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -80,9 +94,9 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-dragon-navy border-t border-dragon-fire/20">
+        <div className="md:hidden bg-gradient-to-b from-dragon-navy to-dragon-black border-t border-dragon-fire/20 animate-fade-in">
           <div className="container mx-auto px-4 py-4">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-6">
               {['Home', 'About', 'Schedule', 'Events', 'Register'].map((item) => {
                 const lowercaseItem = item.toLowerCase();
                 const isActive = activeSection === lowercaseItem;
@@ -91,16 +105,19 @@ const Header = () => {
                   <a 
                     key={item} 
                     href={`#${lowercaseItem}`}
-                    className={`text-lg transition-colors duration-200 ${
+                    className={`text-lg transition-colors duration-300 ${
                       isActive 
                         ? 'text-dragon-fire font-bold' 
                         : 'text-dragon-cream hover:text-dragon-fire'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {item}
+                    <div className="flex items-center">
+                      {isActive && <Flame className="mr-2 text-dragon-fire animate-flame" size={20} />}
+                      {item}
+                    </div>
                     {isActive && (
-                      <div className="h-1 w-1/4 bg-dragon-fire rounded-full mt-1"></div>
+                      <div className="h-1 w-1/4 bg-gradient-to-r from-dragon-orange to-dragon-red rounded-full mt-1"></div>
                     )}
                   </a>
                 );
