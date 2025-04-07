@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Schedule from '../components/Schedule';
-import Speakers from '../components/Speakers';
+import Events from '../components/Events';
 import Register from '../components/Register';
 import Footer from '../components/Footer';
 
@@ -12,10 +12,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-dragon-black">
       <Header />
-      <Hero />
+      <div id="home">
+        <Hero />
+      </div>
       <About />
       <Schedule />
-      <Speakers />
+      <Events />
       <Register />
       <Footer />
     </div>
