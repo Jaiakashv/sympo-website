@@ -44,8 +44,9 @@
   }
 
   body {
-    @apply bg-dragon-black text-dragon-cream font-sans;
+    @apply bg-dragon-black text-dragon-cream font-sans overflow-x-hidden;
     font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -67,8 +68,8 @@
 
 @layer components {
   .fire-btn {
-    @apply relative px-8 py-3 text-lg font-bold text-white rounded-md shadow-lg transform transition-all duration-300 overflow-hidden hover:scale-105 
-    hover:shadow-dragon-fire/40;
+    @apply relative px-6 sm:px-8 py-3 text-base sm:text-lg font-bold text-white rounded-md shadow-lg transform transition-all duration-300 overflow-hidden hover:scale-105 
+    hover:shadow-dragon-fire/40 text-center;
   }
   
   .fire-card {
@@ -84,6 +85,14 @@
   .hover-scale {
     @apply transform transition-transform duration-300 hover:scale-105;
   }
+  
+  .responsive-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8;
+  }
+  
+  .responsive-padding {
+    @apply px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16 lg:py-20;
+  }
 }
 
 @layer utilities {
@@ -97,6 +106,26 @@
   
   .animate-fade-in {
     animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  .animate-on-reveal {
+    opacity: 0;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+  
+  .thin-text {
+    font-weight: 300;
+  }
+  
+  .text-shadow-fire {
+    text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-dragon-orange to-dragon-red bg-clip-text text-transparent;
   }
 }
 
@@ -128,5 +157,41 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media query optimizations */
+@media (max-width: 640px) {
+  .section-title {
+    @apply text-3xl mb-8;
+  }
+  
+  .fire-btn, .fire-card {
+    @apply transform-none; /* Disable transform on smaller screens for better performance */
+  }
+  
+  .animate-flame {
+    animation-duration: 3s; /* Slow down animations on mobile for better performance */
+  }
+}
+
+/* Optimize animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

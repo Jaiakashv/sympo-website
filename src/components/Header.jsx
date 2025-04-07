@@ -50,13 +50,13 @@ const Header = () => {
             <img 
               src="/lovable-uploads/226d236f-9149-4ff6-adcb-6088d5053c46.png" 
               alt="Miralenzan Logo" 
-              className="h-12 md:h-16 rounded-full border-2 border-dragon-fire/40 relative z-10 transition-transform duration-300 group-hover:scale-105"
+              className="h-10 sm:h-12 md:h-16 rounded-full border-2 border-dragon-fire/40 relative z-10 transition-transform duration-300 group-hover:scale-105"
             />
           </div>
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-4 lg:space-x-8">
           {['Home', 'About', 'Schedule', 'Events', 'Register'].map((item) => {
             const lowercaseItem = item.toLowerCase();
             const isActive = activeSection === lowercaseItem;
@@ -65,7 +65,7 @@ const Header = () => {
               <a 
                 key={item} 
                 href={`#${lowercaseItem}`}
-                className={`text-lg font-medium transition-all duration-300 relative overflow-hidden ${
+                className={`text-base lg:text-lg font-medium transition-all duration-300 relative overflow-hidden ${
                   isActive 
                     ? 'text-dragon-fire scale-105 font-bold' 
                     : 'text-dragon-cream hover:text-dragon-fire'
@@ -87,6 +87,7 @@ const Header = () => {
         <button 
           className="md:hidden text-dragon-cream hover:text-dragon-fire transition-colors duration-300"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
         >
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
