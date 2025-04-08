@@ -58,14 +58,10 @@ const Index = () => {
       </div>
       <About />
       <Schedule />
-<<<<<<< HEAD
-      <Events />
-=======
       <div id="events">
+        <Events />
         <Speakers />
       </div>
-      <Register />
->>>>>>> de0c62c10647aa5b73f5f6b3a2ced6bcfe99ed45
       <Footer />
     </div>
   );

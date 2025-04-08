@@ -55,13 +55,8 @@ const Header = () => {
         </div>
 
         {/* Desktop Menu */}
-<<<<<<< HEAD
-        <nav className="hidden md:flex space-x-6 lg:space-x-8">
-          {['Home', 'About', 'Schedule', 'Events'].map((item) => {
-=======
         <nav className="hidden md:flex space-x-4 lg:space-x-8">
           {['Home', 'About', 'Schedule', 'Events', 'Register'].map((item) => {
->>>>>>> de0c62c10647aa5b73f5f6b3a2ced6bcfe99ed45
             const lowercaseItem = item.toLowerCase();
             const isActive = activeSection === lowercaseItem;
             
@@ -91,11 +86,7 @@ const Header = () => {
         <button 
           className="md:hidden text-dragon-cream hover:text-dragon-fire transition-colors duration-300 p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-<<<<<<< HEAD
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-=======
-          aria-label="Toggle menu"
->>>>>>> de0c62c10647aa5b73f5f6b3a2ced6bcfe99ed45
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -107,7 +98,7 @@ const Header = () => {
       }`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col space-y-4 sm:space-y-6">
-            {['Home', 'About', 'Schedule', 'Events'].map((item) => {
+            {['Home', 'About', 'Schedule', 'Events', 'Register'].map((item) => {
               const lowercaseItem = item.toLowerCase();
               const isActive = activeSection === lowercaseItem;
               
