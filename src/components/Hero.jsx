@@ -53,15 +53,24 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="container mx-auto px-4 sm:px-6 z-10 py-12 sm:py-16 md:py-20" ref={containerRef}>
+      <div className="container mx-auto px-4 sm:px-6 z-10 py-4 sm:py-16 md:py-20" ref={containerRef}>
         <div className="flex flex-col items-center text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dragon-cream">
-            MEENAKSHI COLLEGE OF ENGINEERING
-          </h2>
-          <p className="text-xs sm:text-sm mb-4 text-dragon-cream">
-            #12,Vembuliamman Kovil Street,West K.K.Nagar Chennai-600078
-          </p>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4 text-dragon-cream relative inline-block">
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-2">
+            <img 
+              src="/public/lovable-uploads/mce-logo.png" 
+              alt="Meenakshi College of Engineering Logo" 
+              className="w-23 h-23 sm:w-15 sm:h-15"
+            />
+            <div className="flex flex-col items-center sm:items-start">
+              <h2 className="text-l sm:text-2xl md:text-3xl font-bold text-dragon-cream">
+                MEENAKSHI COLLEGE OF ENGINEERING
+              </h2>
+              <p className="text-xs sm:text-sm text-dragon-cream">
+                #12,Vembuliamman Kovil Street,West K.K.Nagar Chennai-600078
+              </p>
+            </div>
+          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold mt-8 sm:mt-0 mb-4 text-dragon-cream relative inline-block">
             <span className="relative">
               <span className="absolute -top-4 sm:-top-6 -left-4 sm:-left-6 text-dragon-fire/20 rotate-12 hidden sm:block">
                 <Sparkles size={32} className="animate-flame" />

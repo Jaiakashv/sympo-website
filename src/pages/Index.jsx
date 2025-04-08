@@ -5,7 +5,6 @@ import About from '../components/About';
 import Schedule from '../components/Schedule';
 import Events from '../components/Events';
 import Footer from '../components/Footer';
-import Speakers from '../components/Speakers';
 
 const Index = () => {
   // Add a page load animation effect
@@ -60,7 +59,6 @@ const Index = () => {
       <Schedule />
       <div id="events">
         <Events />
-        <Speakers />
       </div>
       <Footer />
     </div>

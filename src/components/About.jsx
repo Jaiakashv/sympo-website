@@ -20,15 +20,15 @@ const About = () => {
             <div className="space-y-4 sm:space-y-6 text-base sm:text-lg">
               <p className="text-dragon-cream/90">
                 <span className="text-dragon-fire font-bold text-xl sm:text-2xl relative">
-                  Miralenzan 2K25
+                  Mirai enzan 2K25
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-dragon-orange to-dragon-red"></span>
-                </span> is the premier gathering for dragon enthusiasts, scholars, and practitioners from around the world. 
+                </span>  is a National Level Technical Symposium proudly organized by the Department of Computer Science and Engineering. The term "Mirai Enzan" – meaning "Future computation" – reflects our vision to build a future driven by innovation, intelligence, and impact. 
               </p>
               <p className="text-dragon-cream/80">
-                Join us for four days of intense workshops, competitive tournaments, expert panels, and networking opportunities with the brightest minds in dragon studies.
+              This grand event serves as a dynamic platform for students, tech enthusiasts, and innovators from across the nation to showcase their talents, exchange ideas, and engage in healthy competition. Through a wide range of events including technical contests, workshops, coding battles, project expos, paper presentations, and fun-filled spot events, we aim to foster creativity, critical thinking, and collaboration among future tech leaders.
               </p>
               <p className="text-dragon-cream/80">
-                Whether you're a seasoned dragonologist or a curious newcomer, Miralenzan offers something for everyone - from ancient draconic arts to cutting-edge fire-breathing techniques.
+              Whether you're a coder, designer, thinker, or doer – Mirai Enzan offers a space to challenge yourself, learn new skills, and connect with like-minded peers and professionals
               </p>
               
               <div className="pt-6 sm:pt-8">

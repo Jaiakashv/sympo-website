@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Flame, Users, Sparkles, Music, Trophy } from 'lucide-react';
+import EventModal from './EventModal';
 
 const eventsData = {
   technical: [
@@ -7,6 +8,7 @@ const eventsData = {
       name: 'Paper Presentation',
       type: 'Competition',
       image: '/event-images/paper-presentation.jpg',
+      detailImage: '/event-images/paper-presentation-detail.jpg',
       description: 'Present your research papers on innovative dragon-tech solutions and emerging technologies in draconic studies.',
       host: 'Prof. Firebrand Academy'
     },
@@ -34,7 +36,7 @@ const eventsData = {
     {
       name: 'Hardware Resemble',
       type: 'Competition',
-      image: '/event-images/hardware.jpg',
+      image: '/event-images/hard.jpg',
       description: 'Design and build functional hardware prototypes for dragon management, training, or environmental monitoring.',
       host: 'Master Engineer Ember Tech'
     },
@@ -50,14 +52,15 @@ const eventsData = {
     {
       name: 'Cinematic Quiz',
       type: 'Competition',
-      image: '/event-images/cinematic-quiz.jpg',
+      image: '/event-images/cine.jpg',
+      detailImage: '/event-images/cine-detail.jpg',
       description: 'Test your knowledge of dragon movies, TV shows, and cinematic lore in this exciting film-themed quiz competition.',
       host: 'Cinema Master Flamescale'
     },
     {
       name: 'Bridge the Gap',
       type: 'Team Event',
-      image: '/event-images/bridge-gap.jpg',
+      image: '/event-images/bridge.jpg',
       description: 'A team-building event where participants collaborate to solve problems and bridge communication gaps between dragons and humans.',
       host: 'Mediator Harmony Wing'
     },
@@ -71,21 +74,21 @@ const eventsData = {
     {
       name: 'Portrait Painting',
       type: 'Art Competition',
-      image: '/event-images/portrait-painting.jpg',
+      image: '/event-images/paint.jpg',
       description: 'Express your artistic talents by painting portraits of legendary dragons and their riders using various media and techniques.',
       host: 'Master Artist Brushfire'
     },
     {
       name: 'Anime Quiz',
       type: 'Competition',
-      image: '/event-images/anime-quiz.jpg',
+      image: '/event-images/anime.jpg',
       description: 'Challenge your knowledge of dragon-themed anime, characters, and storytelling traditions from Eastern and Western animation.',
       host: 'Anime Scholar Dragonwing'
     },
     {
       name: 'IPL Mock Auction',
       type: 'Simulation',
-      image: '/event-images/mock-auction.jpg',
+      image: '/event-images/ipl.jpg',
       description: 'Participate in a simulated dragon rider auction, building the ultimate team while managing your resources and strategy.',
       host: 'Auction Master Gold Hoard'
     },
@@ -101,14 +104,15 @@ const eventsData = {
     {
       name: 'Adaptune',
       type: 'Performance',
-      image: '/event-images/adaptune.jpg',
+      image: '/event-images/adapt.jpg',
+      detailImage: '/event-images/adapt-detail.jpg',
       description: 'Create and perform your own musical adaptation of famous dragon legends, incorporating traditional and modern elements.',
       host: 'Maestro Melodyscale'
     },
     {
       name: 'Singing',
       type: 'Competition',
-      image: '/event-images/singing.jpg',
+      image: '/event-images/sing.jpg',
       description: 'Showcase your vocal talents with dragon-themed songs, ranging from powerful ballads to contemporary pieces.',
       host: 'Vocal Master Harmonia'
     },
@@ -129,14 +133,14 @@ const eventsData = {
     {
       name: 'Body Building',
       type: 'Competition',
-      image: '/event-images/body-building.jpg',
+      image: '/event-images/body-build.jpg',
       description: 'Demonstrate strength and physical discipline in this competition inspired by the powerful physique of dragons.',
       host: 'Strength Coach Ironscale'
     },
     {
       name: 'Fashion Show',
       type: 'Exhibition',
-      image: '/event-images/fashion-show.jpg',
+      image: '/event-images/fashion.jpg',
       description: 'Showcase dragon-inspired fashion designs, from wearable art to costume creations that embody draconic elegance.',
       host: 'Fashion Designer Shimmerscale'
     }
@@ -146,6 +150,7 @@ const eventsData = {
       name: 'Box Cricket (Boys)',
       type: 'Tournament',
       image: '/event-images/box-cricket.jpg',
+      detailImage: '/event-images/box-cricket-detail.jpg',
       description: 'Compete in this fast-paced modified version of cricket designed for limited spaces, showcasing batting and bowling skills.',
       host: 'Cricket Coach Fastbowl'
     },
@@ -218,9 +223,11 @@ const eventsData = {
 };
 
 const Events = () => {
-  const [activeCategory, setActiveCategory] = useState('technical');
+  const [selectedEvent, setSelectedEvent] = useState(null);
+  const [activeTab, setActiveTab] = useState('technical');
   const [hoveredCard, setHoveredCard] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  const containerRef = useRef(null);
   
   // Animation when switching categories
   useEffect(() => {
@@ -229,11 +236,42 @@ const Events = () => {
     setTimeout(() => {
       setIsLoaded(true);
     }, 100);
-  }, [activeCategory]);
+  }, [activeTab]);
+
+  // Disable body scroll when modal is open
+  useEffect(() => {
+    if (selectedEvent) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [selectedEvent]);
+  
+  // Close modal on escape key
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && selectedEvent) {
+        setSelectedEvent(null);
+      }
+    };
+    
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectedEvent]);
 
   // Fallback image for missing event images
   const handleImageError = (e) => {
     e.target.src = 'https://via.placeholder.com/800x600?text=Event+Image';
+  };
+
+  const handleRegisterClick = (event) => {
+    setSelectedEvent(event);
   };
 
   return (
@@ -269,78 +307,78 @@ const Events = () => {
         
         <div className="flex flex-wrap justify-center gap-2 gap-3 sm:gap-4 mb-6 sm:mb-8 md:mb-12">
           <button
-            onClick={() => setActiveCategory('technical')}
+            onClick={() => setActiveTab('technical')}
             className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
-              activeCategory === 'technical' 
+              activeTab === 'technical' 
                 ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
                 : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
             }`}
           >
             <span className="relative z-10 flex items-center">
-              {activeCategory === 'technical' && <Flame className="mr-1.5 animate-flame" size={16} />}
+              {activeTab === 'technical' && <Flame className="mr-1.5 animate-flame" size={16} />}
               Technical
             </span>
-            {activeCategory !== 'technical' && (
+            {activeTab !== 'technical' && (
               <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
             )}
           </button>
           
           <button
-            onClick={() => setActiveCategory('nonTechnical')}
+            onClick={() => setActiveTab('nonTechnical')}
             className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
-              activeCategory === 'nonTechnical' 
+              activeTab === 'nonTechnical' 
                 ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
                 : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
             }`}
           >
             <span className="relative z-10 flex items-center">
-              {activeCategory === 'nonTechnical' && <Flame className="mr-1.5 animate-flame" size={16} />}
+              {activeTab === 'nonTechnical' && <Flame className="mr-1.5 animate-flame" size={16} />}
               Non-Technical
             </span>
-            {activeCategory !== 'nonTechnical' && (
+            {activeTab !== 'nonTechnical' && (
               <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
             )}
           </button>
           
           <button
-            onClick={() => setActiveCategory('culturals')}
+            onClick={() => setActiveTab('culturals')}
             className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
-              activeCategory === 'culturals' 
+              activeTab === 'culturals' 
                 ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
                 : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
             }`}
           >
             <span className="relative z-10 flex items-center">
-              {activeCategory === 'culturals' && <Music className="mr-1.5 animate-flame" size={16} />}
+              {activeTab === 'culturals' && <Music className="mr-1.5 animate-flame" size={16} />}
               Culturals
             </span>
-            {activeCategory !== 'culturals' && (
+            {activeTab !== 'culturals' && (
               <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
             )}
           </button>
           
           <button
-            onClick={() => setActiveCategory('sports')}
+            onClick={() => setActiveTab('sports')}
             className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
-              activeCategory === 'sports' 
+              activeTab === 'sports' 
                 ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
                 : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
             }`}
           >
             <span className="relative z-10 flex items-center">
-              {activeCategory === 'sports' && <Trophy className="mr-1.5 animate-flame" size={16} />}
+              {activeTab === 'sports' && <Trophy className="mr-1.5 animate-flame" size={16} />}
               Sports
             </span>
-            {activeCategory !== 'sports' && (
+            {activeTab !== 'sports' && (
               <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
             )}
           </button>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          {eventsData[activeCategory].map((event, index) => (
+          {eventsData[activeTab].map((event, index) => (
             <div 
-              key={`${activeCategory}-${index}`}
+              key={`${activeTab}-${index}`}
               className={`fire-card overflow-hidden group transition-all duration-500 ${
                 isLoaded 
                   ? 'opacity-100 transform-none' 
@@ -383,7 +421,9 @@ const Events = () => {
                 </div>
                 
                 <div className="mt-3 sm:mt-4">
-                  <button className={`w-full py-1.5 sm:py-2 px-4 ${event.isEsports ? 'bg-gradient-to-r from-dragon-orange/20 to-dragon-red/20 hover:from-dragon-orange/30 hover:to-dragon-red/30' : 'bg-gradient-to-r from-dragon-fire/10 to-dragon-fire/20 hover:from-dragon-fire/20 hover:to-dragon-fire/30'} text-dragon-cream rounded transition-all duration-300 group flex items-center justify-center text-sm sm:text-base`}>
+                  <button 
+                    onClick={() => handleRegisterClick(event)}
+                    className={`w-full py-1.5 sm:py-2 px-4 ${event.isEsports ? 'bg-gradient-to-r from-dragon-orange/20 to-dragon-red/20 hover:from-dragon-orange/30 hover:to-dragon-red/30' : 'bg-gradient-to-r from-dragon-fire/10 to-dragon-fire/20 hover:from-dragon-fire/20 hover:to-dragon-fire/30'} text-dragon-cream rounded transition-all duration-300 group flex items-center justify-center text-sm sm:text-base`}>
                     <span>{event.isEsports ? 'Register for Esports Event' : 'Register for Event'}</span>
                     <Flame size={14} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </button>
@@ -393,6 +433,13 @@ const Events = () => {
           ))}
         </div>
       </div>
+
+      {selectedEvent && (
+        <EventModal 
+          event={selectedEvent} 
+          onClose={() => setSelectedEvent(null)} 
+        />
+      )}
     </section>
   );
 };
