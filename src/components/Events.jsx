@@ -1,76 +1,240 @@
-
 import React, { useState, useEffect, useRef } from 'react';
-import { Flame, Users, Sparkles } from 'lucide-react';
+import { Flame, Users, Sparkles, Music, Trophy } from 'lucide-react';
 
 const eventsData = {
   technical: [
     {
-      name: 'Flame Control Workshop',
-      type: 'Workshop',
-      image: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb',
-      description: 'Learn advanced techniques for controlling and manipulating dragon fire with precise movements and mental focus.',
-      host: 'Blaze Master Ryuji'
-    },
-    {
-      name: 'Wing Aerodynamics Seminar',
-      type: 'Seminar',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
-      description: 'Scientific analysis of dragon wing structures and flight patterns, with practical applications for riders.',
-      host: 'Prof. Jackson Harper'
-    },
-    {
-      name: 'Scale Crafting Competition',
+      name: 'Paper Presentation',
       type: 'Competition',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22',
-      description: 'Create armor and accessories from dragon scales. Materials provided, bring your own tools.',
-      host: 'Mistress Vyranna'
+      image: '/event-images/paper-presentation.jpg',
+      description: 'Present your research papers on innovative dragon-tech solutions and emerging technologies in draconic studies.',
+      host: 'Prof. Firebrand Academy'
+    },
+    {
+      name: 'Technical Quiz',
+      type: 'Competition',
+      image: '/event-images/tech-quiz.jpg',
+      description: 'Test your knowledge on dragon sciences, technologies, and innovations in this fast-paced quiz competition.',
+      host: 'Quiz Master Ignitus'
+    },
+    {
+      name: 'Hackathon',
+      type: 'Competition',
+      image: '/event-images/hack.jpg',
+      description: 'A 24-hour coding marathon to develop innovative solutions for dragon-related challenges and technological problems.',
+      host: 'Dragon Code Foundation'
+    },
+    {
+      name: 'Tackle the Cyber',
+      type: 'Competition',
+      image: '/event-images/tackle-the-cyber.jpg',
+      description: 'Learn cybersecurity techniques to protect dragon data systems from external threats in this hands-on workshop.',
+      host: 'Security Expert Draco Shield'
+    },
+    {
+      name: 'Hardware Resemble',
+      type: 'Competition',
+      image: '/event-images/hardware.jpg',
+      description: 'Design and build functional hardware prototypes for dragon management, training, or environmental monitoring.',
+      host: 'Master Engineer Ember Tech'
+    },
+    {
+      name: 'UI/UX Design',
+      type: 'competition',
+      image: '/event-images/ui-ux.jpg',
+      description: 'Create intuitive interfaces and experiences for dragon-related applications and management systems.',
+      host: 'Design Director Flame Interface'
     },
   ],
   nonTechnical: [
     {
-      name: 'Dragon Lore Storytelling',
-      type: 'Cultural Event',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22',
-      description: 'Traditional stories passed down through generations of dragon keepers, told around an enchanted flame.',
-      host: 'Elder Drakonir'
+      name: 'Cinematic Quiz',
+      type: 'Competition',
+      image: '/event-images/cinematic-quiz.jpg',
+      description: 'Test your knowledge of dragon movies, TV shows, and cinematic lore in this exciting film-themed quiz competition.',
+      host: 'Cinema Master Flamescale'
     },
     {
-      name: 'Fire Dance Performance',
+      name: 'Bridge the Gap',
+      type: 'Team Event',
+      image: '/event-images/bridge-gap.jpg',
+      description: 'A team-building event where participants collaborate to solve problems and bridge communication gaps between dragons and humans.',
+      host: 'Mediator Harmony Wing'
+    },
+    {
+      name: 'Debate',
+      type: 'Competition',
+      image: '/event-images/debate.jpg',
+      description: 'Engage in stimulating debates on contemporary dragon-related topics, showcasing your persuasive skills and critical thinking.',
+      host: 'Grand Orator Embertongue'
+    },
+    {
+      name: 'Portrait Painting',
+      type: 'Art Competition',
+      image: '/event-images/portrait-painting.jpg',
+      description: 'Express your artistic talents by painting portraits of legendary dragons and their riders using various media and techniques.',
+      host: 'Master Artist Brushfire'
+    },
+    {
+      name: 'Anime Quiz',
+      type: 'Competition',
+      image: '/event-images/anime-quiz.jpg',
+      description: 'Challenge your knowledge of dragon-themed anime, characters, and storytelling traditions from Eastern and Western animation.',
+      host: 'Anime Scholar Dragonwing'
+    },
+    {
+      name: 'IPL Mock Auction',
+      type: 'Simulation',
+      image: '/event-images/mock-auction.jpg',
+      description: 'Participate in a simulated dragon rider auction, building the ultimate team while managing your resources and strategy.',
+      host: 'Auction Master Gold Hoard'
+    },
+    {
+      name: 'Rangoli/Mehendi',
+      type: 'Art Competition',
+      image: '/event-images/rangoli-mehendi.jpg',
+      description: 'Create beautiful traditional designs inspired by dragon motifs, using colored powders for Rangoli or henna for Mehendi art.',
+      host: 'Art Curator Flame Pattern'
+    }
+  ],
+  culturals: [
+    {
+      name: 'Adaptune',
       type: 'Performance',
-      image: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb',
-      description: 'Spectacular choreographed performance combining human dancers and trained dragons in a dazzling display.',
-      host: 'The Ember Troupe'
+      image: '/event-images/adaptune.jpg',
+      description: 'Create and perform your own musical adaptation of famous dragon legends, incorporating traditional and modern elements.',
+      host: 'Maestro Melodyscale'
     },
     {
-      name: 'Dragon Communication Workshop',
-      type: 'Workshop',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
-      description: 'Learn the basics of telepathic and non-verbal communication with friendly dragons.',
-      host: 'Grand Mage Azuria'
+      name: 'Singing',
+      type: 'Competition',
+      image: '/event-images/singing.jpg',
+      description: 'Showcase your vocal talents with dragon-themed songs, ranging from powerful ballads to contemporary pieces.',
+      host: 'Vocal Master Harmonia'
     },
+    {
+      name: 'Dance',
+      type: 'Performance',
+      image: '/event-images/dance.jpg',
+      description: 'Express the grace and power of dragons through choreographed dance performances, either solo or in groups.',
+      host: 'Dance Director Gracewing'
+    },
+    {
+      name: 'Mime',
+      type: 'Performance',
+      image: '/event-images/mime.jpg',
+      description: 'Tell stories of dragon adventures through the art of silent expression, using only gestures and body movements.',
+      host: 'Mime Artist Silentflame'
+    },
+    {
+      name: 'Body Building',
+      type: 'Competition',
+      image: '/event-images/body-building.jpg',
+      description: 'Demonstrate strength and physical discipline in this competition inspired by the powerful physique of dragons.',
+      host: 'Strength Coach Ironscale'
+    },
+    {
+      name: 'Fashion Show',
+      type: 'Exhibition',
+      image: '/event-images/fashion-show.jpg',
+      description: 'Showcase dragon-inspired fashion designs, from wearable art to costume creations that embody draconic elegance.',
+      host: 'Fashion Designer Shimmerscale'
+    }
+  ],
+  sports: [
+    {
+      name: 'Box Cricket (Boys)',
+      type: 'Tournament',
+      image: '/event-images/box-cricket.jpg',
+      description: 'Compete in this fast-paced modified version of cricket designed for limited spaces, showcasing batting and bowling skills.',
+      host: 'Cricket Coach Fastbowl'
+    },
+    {
+      name: 'Football (Boys)',
+      type: 'Tournament',
+      image: '/event-images/football.jpg',
+      description: 'Battle it out on the field in this exciting football tournament featuring tactical gameplay and team coordination.',
+      host: 'Football Captain Swiftfoot'
+    },
+    {
+      name: 'Badminton (Boys & Girls)',
+      type: 'Tournament',
+      image: '/event-images/badminton.jpg',
+      description: 'Showcase your agility and precision in singles and doubles badminton matches for both boys and girls.',
+      host: 'Badminton Pro Quicksmash'
+    },
+    {
+      name: 'Kho-Kho (Girls)',
+      type: 'Tournament',
+      image: '/event-images/kho-kho.jpg',
+      description: 'Participate in this traditional Indian sport that tests speed, strategy, and teamwork in an exciting tag-based format.',
+      host: 'Team Leader Swiftchase'
+    },
+    {
+      name: 'Throwball (Girls)',
+      type: 'Tournament',
+      image: '/event-images/throwball.jpg',
+      description: 'Compete in this non-contact ball sport that combines elements of volleyball and handball for female athletes.',
+      host: 'Coach Steadyhand'
+    },
+    {
+      name: 'Carrom',
+      type: 'Competition',
+      image: '/event-images/carrom.jpg',
+      description: 'Test your precision and strategy in this tabletop game that combines elements of billiards, shuffleboard and checkers.',
+      host: 'Carrom Master Strikeperfect'
+    },
+    {
+      name: 'Chess',
+      type: 'Tournament',
+      image: '/event-images/chess.jpg',
+      description: 'Challenge your strategic thinking and foresight in this classic battle of minds on the checkered board.',
+      host: 'Grandmaster Deepthought'
+    },
+    {
+      name: 'FF-MAX',
+      type: 'Esports',
+      image: '/event-images/ff-max.jpg',
+      description: 'Compete in this popular battle royale mobile game tournament, showcasing your survival and combat skills in a premiere Esports competition.',
+      host: 'Gaming Champion Pixelfire',
+      isEsports: true
+    },
+    {
+      name: 'CrossFit',
+      type: 'Competition',
+      image: '/event-images/crossfit.jpg',
+      description: 'Test your strength, endurance and overall fitness in this high-intensity functional training competition.',
+      host: 'Fitness Coach Ironmuscle'
+    },
+    {
+      name: 'BGMI',
+      type: 'Esports',
+      image: '/event-images/bgmi.jpg',
+      description: 'Battle for victory in this tactical mobile shooter game tournament requiring teamwork and strategic thinking. A flagship Esports event for mobile gamers.',
+      host: 'Esports Director Battleking',
+      isEsports: true
+    }
   ]
 };
 
 const Events = () => {
   const [activeCategory, setActiveCategory] = useState('technical');
   const [hoveredCard, setHoveredCard] = useState(null);
-  const cardsRef = useRef([]);
-
+  const [isLoaded, setIsLoaded] = useState(false);
+  
   // Animation when switching categories
   useEffect(() => {
-    cardsRef.current.forEach((card, index) => {
-      if (card) {
-        card.style.opacity = "0";
-        card.style.transform = "translateY(20px)";
-        
-        setTimeout(() => {
-          card.style.transition = "all 0.5s ease";
-          card.style.opacity = "1";
-          card.style.transform = "translateY(0)";
-        }, 100 * index);
-      }
-    });
+    setIsLoaded(false);
+    // Small delay to trigger animation
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 100);
   }, [activeCategory]);
+
+  // Fallback image for missing event images
+  const handleImageError = (e) => {
+    e.target.src = 'https://via.placeholder.com/800x600?text=Event+Image';
+  };
 
   return (
     <section id="events" className="py-20 bg-gradient-to-b from-dragon-black to-dragon-navy relative overflow-hidden">
@@ -103,79 +267,125 @@ const Events = () => {
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full blur-3xl bg-dragon-fire/20 rounded-full"></div>
         </h2>
         
-        <div className="flex justify-center space-x-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 gap-3 sm:gap-4 mb-6 sm:mb-8 md:mb-12">
           <button
             onClick={() => setActiveCategory('technical')}
-            className={`px-8 py-3 rounded-full text-lg font-bold transition-all duration-500 relative overflow-hidden group ${
+            className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
               activeCategory === 'technical' 
                 ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
                 : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
             }`}
           >
             <span className="relative z-10 flex items-center">
-              {activeCategory === 'technical' && <Flame className="mr-2 animate-flame" size={20} />}
-              Technical Events
+              {activeCategory === 'technical' && <Flame className="mr-1.5 animate-flame" size={16} />}
+              Technical
             </span>
             {activeCategory !== 'technical' && (
               <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
             )}
           </button>
+          
           <button
             onClick={() => setActiveCategory('nonTechnical')}
-            className={`px-8 py-3 rounded-full text-lg font-bold transition-all duration-500 relative overflow-hidden group ${
+            className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
               activeCategory === 'nonTechnical' 
                 ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
                 : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
             }`}
           >
             <span className="relative z-10 flex items-center">
-              {activeCategory === 'nonTechnical' && <Flame className="mr-2 animate-flame" size={20} />}
-              Non-Technical Events
+              {activeCategory === 'nonTechnical' && <Flame className="mr-1.5 animate-flame" size={16} />}
+              Non-Technical
             </span>
             {activeCategory !== 'nonTechnical' && (
               <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
             )}
           </button>
+          
+          <button
+            onClick={() => setActiveCategory('culturals')}
+            className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
+              activeCategory === 'culturals' 
+                ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
+                : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
+            }`}
+          >
+            <span className="relative z-10 flex items-center">
+              {activeCategory === 'culturals' && <Music className="mr-1.5 animate-flame" size={16} />}
+              Culturals
+            </span>
+            {activeCategory !== 'culturals' && (
+              <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+            )}
+          </button>
+          
+          <button
+            onClick={() => setActiveCategory('sports')}
+            className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
+              activeCategory === 'sports' 
+                ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
+                : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
+            }`}
+          >
+            <span className="relative z-10 flex items-center">
+              {activeCategory === 'sports' && <Trophy className="mr-1.5 animate-flame" size={16} />}
+              Sports
+            </span>
+            {activeCategory !== 'sports' && (
+              <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+            )}
+          </button>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {eventsData[activeCategory].map((event, index) => (
             <div 
-              key={index} 
-              ref={el => cardsRef.current[index] = el}
-              className="fire-card overflow-hidden group"
+              key={`${activeCategory}-${index}`}
+              className={`fire-card overflow-hidden group transition-all duration-500 ${
+                isLoaded 
+                  ? 'opacity-100 transform-none' 
+                  : 'opacity-0 translate-y-8'
+              }`}
+              style={{
+                transitionDelay: `${index * 100}ms`
+              }}
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}
-              style={{ opacity: 0, transform: 'translateY(20px)' }}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-dragon-black via-dragon-black/70 to-transparent z-10"></div>
                 <div className={`absolute inset-0 bg-dragon-fire/30 mix-blend-overlay transition-opacity duration-500 ${hoveredCard === index ? 'opacity-40' : 'opacity-0'}`}></div>
                 <img 
                   src={event.image} 
                   alt={event.name} 
+                  onError={handleImageError}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
-                  <h3 className="text-xl font-bold text-dragon-cream group-hover:text-dragon-fire transition-colors duration-300">{event.name}</h3>
-                  <p className="text-dragon-fire font-medium flex items-center">
-                    {hoveredCard === index && <Sparkles size={16} className="mr-1 animate-flame" />}
+                  <h3 className="text-lg sm:text-xl font-bold text-dragon-cream group-hover:text-dragon-fire transition-colors duration-300">{event.name}</h3>
+                  <p className="text-dragon-fire font-medium flex items-center text-sm sm:text-base">
+                    {hoveredCard === index && <Sparkles size={14} className="mr-1 animate-flame" />}
                     {event.type}
+                    {event.isEsports && (
+                      <span className="ml-2 bg-gradient-to-r from-dragon-orange to-dragon-red px-2 py-0.5 rounded-full text-white text-xs font-bold animate-pulse">
+                        ESPORTS
+                      </span>
+                    )}
                   </p>
                 </div>
               </div>
               
-              <div className="p-6 bg-gradient-to-b from-dragon-navy/80 to-dragon-black">
-                <p className="text-dragon-cream/80 mb-3">{event.description}</p>
-                <div className="flex items-center text-dragon-cream/70">
-                  <Users className="mr-2" size={18} />
+              <div className="p-4 sm:p-5 md:p-6 bg-gradient-to-b from-dragon-navy/80 to-dragon-black">
+                <p className={`text-dragon-cream/80 mb-3 text-sm sm:text-base line-clamp-3 ${event.isEsports ? 'font-medium' : ''}`}>{event.description}</p>
+                <div className="flex items-center text-dragon-cream/70 text-xs sm:text-sm">
+                  <Users className="mr-2 flex-shrink-0" size={16} />
                   <span className="font-medium">Hosted by: {event.host}</span>
                 </div>
                 
-                <div className="mt-4">
-                  <button className="w-full py-2 px-4 bg-gradient-to-r from-dragon-fire/10 to-dragon-fire/20 hover:from-dragon-fire/20 hover:to-dragon-fire/30 text-dragon-cream rounded transition-all duration-300 group flex items-center justify-center">
-                    <span>Register for Event</span>
-                    <Flame size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="mt-3 sm:mt-4">
+                  <button className={`w-full py-1.5 sm:py-2 px-4 ${event.isEsports ? 'bg-gradient-to-r from-dragon-orange/20 to-dragon-red/20 hover:from-dragon-orange/30 hover:to-dragon-red/30' : 'bg-gradient-to-r from-dragon-fire/10 to-dragon-fire/20 hover:from-dragon-fire/20 hover:to-dragon-fire/30'} text-dragon-cream rounded transition-all duration-300 group flex items-center justify-center text-sm sm:text-base`}>
+                    <span>{event.isEsports ? 'Register for Esports Event' : 'Register for Event'}</span>
+                    <Flame size={14} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </button>
                 </div>
               </div>
