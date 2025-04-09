@@ -8,7 +8,7 @@ const eventsData = {
       name: 'Paper Presentation',
       type: 'Competition',
       image: '/event-images/paper-presentation.jpg',
-      description: 'Present your research papers on innovative dragon-tech solutions and emerging technologies in draconic studies.',
+      description: 'Present your research papers on innovative tech solutions and emerging technologies in specialized studies.',
       host: 'Abitha vk Lija',
       date: 'May 15, 2025',
       time: '10:00 AM - 4:00 PM',
@@ -28,7 +28,7 @@ const eventsData = {
       name: 'Technical Quiz',
       type: 'Quiz',
       image: '/event-images/tech-quiz.jpg',
-      description: 'Test your technical knowledge and problem-solving skills in this fast-paced quiz covering various dragon engineering topics.',
+      description: 'Test your technical knowledge and problem-solving skills in this fast-paced quiz covering various engineering topics.',
       host: 'Tech Master Ignis',
       rules: [
         "Each question has a time limit.",
@@ -39,11 +39,11 @@ const eventsData = {
       prizes: ['Top Tech Gadget', 'Certification Voucher']
     },
     {
-      name: 'Hackathon',
+      name: 'Sparkathon',
       type: 'Competition',
       image: '/event-images/hack.jpg',
-      description: 'A 24-hour coding marathon to develop innovative solutions for dragon-related challenges and technological problems.',
-      host: 'Dragon Code Foundation',
+      description: 'A 6-hour coding marathon to develop innovative solutions for complex challenges and technological problems.',
+      host: 'Code Foundation',
       rules: [
         "Teams must develop a solution based on the given problem statement.",
         "Allowed languages: Python, Java, C++, etc.",
@@ -53,26 +53,26 @@ const eventsData = {
       ],
       prizes: ['Top Prize', 'Runner Up']
     },
-    {
-      name: 'Tackle the Cyber',
-      type: 'Competition',
-      image: '/event-images/tackle-the-cyber.jpg',
-      description: 'Learn cybersecurity techniques to protect dragon data systems from external threats in this hands-on workshop.',
-      host: 'Security Expert Draco Shield',
-      rules: [
-        "Participants must not harm or hack event infrastructure.",
-        "No unauthorized tools or pre-written scripts.",
-        "Teams must document steps taken to solve challenges.",
-        "Any unethical behavior leads to disqualification."
-      ],
-      prizes: ['Cyber Guardian Trophy', 'Security Tool Subscription']
-    },
+    // {
+    //   name: 'Tackle the Cyber',
+    //   type: 'Competition',
+    //   image: '/event-images/tackle-the-cyber.jpg',
+    //   description: 'Learn cybersecurity techniques to protect critical data systems from external threats in this hands-on workshop.',
+    //   host: 'Security Expert Shield',
+    //   rules: [
+    //     "Participants must not harm or hack event infrastructure.",
+    //     "No unauthorized tools or pre-written scripts.",
+    //     "Teams must document steps taken to solve challenges.",
+    //     "Any unethical behavior leads to disqualification."
+    //   ],
+    //   prizes: ['Cyber Guardian Trophy', 'Security Tool Subscription']
+    // },
     {
       name: 'Hardware Resemble',
       type: 'Competition',
       image: '/event-images/hard.jpg',
-      description: 'Design and build functional hardware prototypes for dragon management, training, or environmental monitoring.',
-      host: 'Master Engineer Ember Tech',
+      description: 'Design and build functional hardware prototypes for management, training, or environmental monitoring.',
+      host: 'Master Engineer Tech',
       rules: [
         "Teams must assemble/disassemble hardware components within the time limit.",
         "Participants should identify and explain each part.",
@@ -85,8 +85,8 @@ const eventsData = {
       name: 'UI/UX Design',
       type: 'competition',
       image: '/event-images/ui-ux.jpg',
-      description: 'Create intuitive interfaces and experiences for dragon-related applications and management systems.',
-      host: 'Design Director Flame Interface',
+      description: 'Create intuitive interfaces and experiences for various applications and management systems.',
+      host: 'Design Director Interface',
       rules: [
         "Participants must design a UI/UX prototype for a given problem statement.",
         "Allowed tools: Figma, Adobe XD, Canva, or any other design software.",
@@ -96,7 +96,7 @@ const eventsData = {
       prizes: ['Best Design Award', 'Design Tool Subscription']
     },
     {
-      name: 'Coding Challenge',
+      name: 'Debugging',
       type: 'Competition',
       image: '/event-images/debug.jpg',
       description: 'Solve complex coding problems and showcase your programming skills.',
@@ -120,7 +120,7 @@ const eventsData = {
       name: 'Cinematic Quiz',
       type: 'Quiz',
       image: '/event-images/cinematic-quiz.jpg',
-      description: 'Test your knowledge of movies and cinema in this exciting quiz.',
+      description: 'Test your knowledge of movies, TV shows, and cinematic lore in this exciting film-themed quiz competition.',
       host: 'Jane Smith',
       date: 'July 5, 2025',
       time: '11:00 AM - 1:00 PM',
@@ -139,8 +139,8 @@ const eventsData = {
       name: 'Bridge the Gap',
       type: 'Team Event',
       image: '/event-images/bridge.jpg',
-      description: 'A team-building event where participants collaborate to solve problems and bridge communication gaps between dragons and humans.',
-      host: 'Mediator Harmony Wing',
+      description: 'A team-building event where participants collaborate to solve problems and bridge communication gaps effectively.',
+      host: 'Mediator Harmony',
       rules: [
         "One member is given a keyword, and they must explain it without saying the word itself.",
         "The other member must guess the correct word.",
@@ -153,8 +153,8 @@ const eventsData = {
       name: 'Debate',
       type: 'Competition',
       image: '/event-images/debate.jpg',
-      description: 'Engage in stimulating debates on contemporary dragon-related topics, showcasing your persuasive skills and critical thinking.',
-      host: 'Grand Orator Embertongue',
+      description: 'Engage in stimulating debates on contemporary topics, showcasing your persuasive skills and critical thinking.',
+      host: 'Grand Orator',
       rules: [
         "Topics will be given on the spot or 15 minutes prior.",
         "Each participant must present arguments for or against the topic.",
@@ -167,8 +167,8 @@ const eventsData = {
       name: 'Portrait Painting',
       type: 'Art Competition',
       image: '/event-images/paint.jpg',
-      description: 'Express your artistic talents by painting portraits of legendary dragons and their riders using various media and techniques.',
-      host: 'Master Artist Brushfire',
+      description: 'Express your artistic talents by painting portraits of legendary figures and their companions using various media and techniques.',
+      host: 'Master Artist',
       rules: [
         "Participants must bring their own materials (canvas, paints, brushes).",
         "No digital art or tracing allowed.",
@@ -181,8 +181,8 @@ const eventsData = {
       name: 'Anime Quiz',
       type: 'Competition',
       image: '/event-images/anime.jpg',
-      description: 'Challenge your knowledge of dragon-themed anime, characters, and storytelling traditions from Eastern and Western animation.',
-      host: 'Anime Scholar Dragonwing',
+      description: 'Challenge your knowledge of themed anime, characters, and storytelling traditions from Eastern and Western animation.',
+      host: 'Anime Scholar',
       rules: [
         "Only one answer per team per question.",
         "No use of mobile phones or internet help.",
@@ -194,8 +194,8 @@ const eventsData = {
       name: 'IPL Mock Auction',
       type: 'Simulation',
       image: '/event-images/ipl.jpg',
-      description: 'Participate in a simulated dragon rider auction, building the ultimate team while managing your resources and strategy.',
-      host: 'Auction Master Gold Hoard',
+      description: 'Participate in a simulated team auction, building the ultimate squad while managing your resources and strategy.',
+      host: 'Auction Master',
       rules: [
         "Each team gets a virtual budget to bid for players.",
         "Player values are pre-determined based on real IPL stats.",
@@ -208,8 +208,8 @@ const eventsData = {
       name: 'Rangoli/Mehendi',
       type: 'Art Competition',
       image: '/event-images/rangoli.jpg',
-      description: 'Create beautiful traditional designs inspired by dragon motifs, using colored powders for Rangoli or henna for Mehendi art.',
-      host: 'Art Curator Flame Pattern',
+      description: 'Create beautiful traditional designs inspired by cultural motifs, using colored powders for Rangoli or henna for Mehendi art.',
+      host: 'Art Curator',
       rules: [
         "Participants must bring their own materials (Mehendi cones, colors, etc.).",
         "Designs must be original (no printed references).",
@@ -243,8 +243,8 @@ const eventsData = {
       name: 'Singing',
       type: 'Competition',
       image: '/event-images/sing.jpg',
-      description: 'Showcase your vocal talents with dragon-themed songs, ranging from powerful ballads to contemporary pieces.',
-      host: 'Vocal Master Harmonia',
+      description: 'Showcase your vocal talents with themed songs, ranging from powerful ballads to contemporary pieces.',
+      host: 'Vocal Master',
       rules: [
         "Participants can sing with or without background music (karaoke allowed).",
         "No auto-tune or pre-recorded vocals.",
@@ -272,8 +272,8 @@ const eventsData = {
       name: 'Mime',
       type: 'Performance',
       image: '/event-images/mime.jpg',
-      description: 'Tell stories of dragon adventures through the art of silent expression, using only gestures and body movements.',
-      host: 'Mime Artist Silentflame',
+      description: 'Tell compelling stories through the art of silent expression, using only gestures and body movements.',
+      host: 'Mime Artist',
       rules: [
         "No dialogues or vocal sounds (only expressions & gestures).",
         "Use of props is allowed but should not distract from the act.",
@@ -286,8 +286,8 @@ const eventsData = {
       name: 'Body Building',
       type: 'Competition',
       image: '/event-images/body-build.jpg',
-      description: 'Demonstrate strength and physical discipline in this competition inspired by the powerful physique of dragons.',
-      host: 'Strength Coach Ironscale',
+      description: 'Demonstrate strength and physical discipline in this demanding fitness competition.',
+      host: 'Strength Coach',
       rules: [
         "Participants must wear appropriate attire (shorts/tank tops).",
         "No external assistance (supplements, oils, etc.).",
@@ -299,8 +299,8 @@ const eventsData = {
       name: 'Fashion Show',
       type: 'Exhibition',
       image: '/event-images/fashion.jpg',
-      description: 'Showcase dragon-inspired fashion designs, from wearable art to costume creations that embody draconic elegance.',
-      host: 'Fashion Designer Shimmerscale',
+      description: 'Showcase themed fashion designs, from wearable art to costume creations that embody elegance and creativity.',
+      host: 'Fashion Designer',
       rules: [
         "Themes will be provided or teams can choose their own.",
         "No inappropriate outfits or offensive gestures.",
@@ -336,7 +336,7 @@ const eventsData = {
       type: 'Tournament',
       image: '/event-images/football.jpg',
       description: 'Battle it out on the field in this exciting football tournament featuring tactical gameplay and team coordination.',
-      host: 'Football Captain Swiftfoot',
+      host: 'Football Captain',
       rules: [
         "No offside rule.",
         "Rolling substitutions allowed.",
@@ -350,7 +350,7 @@ const eventsData = {
       type: 'Tournament',
       image: '/event-images/badminton.jpg',
       description: 'Showcase your agility and precision in singles and doubles badminton matches for both boys and girls.',
-      host: 'Badminton Pro Quicksmash',
+      host: 'Badminton Pro',
       rules: [
         "Standard badminton rules apply.",
         "Players must bring their own racquets; shuttlecock will be provided.",
@@ -363,7 +363,7 @@ const eventsData = {
       type: 'Tournament',
       image: '/event-images/kho-kho.jpg',
       description: 'Participate in this traditional Indian sport that tests speed, strategy, and teamwork in an exciting tag-based format.',
-      host: 'Team Leader Swiftchase',
+      host: 'Team Leader',
       rules: [
         "Standard Kho-Kho rules apply.",
         "Defenders must avoid getting touched by chasers.",
@@ -376,7 +376,7 @@ const eventsData = {
       type: 'Tournament',
       image: '/event-images/throwball.jpg',
       description: 'Compete in this non-contact ball sport that combines elements of volleyball and handball for female athletes.',
-      host: 'Coach Steadyhand',
+      host: 'Coach',
       rules: [
         "Ball must be caught and thrown (no volleyball-style hits).",
         "Each team gets three touches before returning the ball.",
@@ -390,7 +390,7 @@ const eventsData = {
       type: 'Competition',
       image: '/event-images/carrom.jpg',
       description: 'Test your precision and strategy in this tabletop game that combines elements of billiards, shuffleboard and checkers.',
-      host: 'Carrom Master Strikeperfect',
+      host: 'Carrom Master',
       rules: [
         "Standard carrom board rules apply.",
         "No external powder allowed.",
@@ -403,7 +403,7 @@ const eventsData = {
       type: 'Tournament',
       image: '/event-images/chess.jpg',
       description: 'Challenge your strategic thinking and foresight in this classic battle of minds on the checkered board.',
-      host: 'Grandmaster Deepthought',
+      host: 'Grandmaster',
       rules: [
         "Standard FIDE chess rules apply.",
         "Players must not use external help (e.g., mobile phones).",
@@ -416,7 +416,7 @@ const eventsData = {
       type: 'Esports',
       image: '/event-images/ff-max.jpg',
       description: 'Compete in this popular battle royale mobile game tournament, showcasing your survival and combat skills in a premiere Esports competition.',
-      host: 'Gaming Champion Pixelfire',
+      host: 'Gaming Champion',
       isEsports: true,
       rules: [
         "Standard Free Fire tournament rules apply.",
@@ -430,7 +430,7 @@ const eventsData = {
       type: 'Competition',
       image: '/event-images/crossfit.jpg',
       description: 'Test your strength, endurance and overall fitness in this high-intensity functional training competition.',
-      host: 'Fitness Coach Ironmuscle',
+      host: 'Fitness Coach',
       rules: [
         "Participants must complete challenges in the given time.",
         "Judges will assess form, stamina, and completion.",
@@ -443,7 +443,7 @@ const eventsData = {
       type: 'Esports',
       image: '/event-images/bgmi.jpg',
       description: 'Battle for victory in this tactical mobile shooter game tournament requiring teamwork and strategic thinking. A flagship Esports event for mobile gamers.',
-      host: 'Esports Director Battleking',
+      host: 'Esports Director',
       isEsports: true,
       rules: [
         "Standard BGMI tournament rules apply.",
@@ -647,7 +647,7 @@ const Events = () => {
                 </div>
               </div>
               
-              <div className="p-4 sm:p-5 md:p-6 bg-gradient-to-b from-dragon-navy/80 to-dragon-black">
+              <div className="p-4 sm:p-5 md:p-6 bg-gradient-to-b from-dragon-navy/80 to-dragon-black relative z-40">
                 <p className={`text-dragon-cream/80 mb-3 text-sm sm:text-base line-clamp-3 ${event.isEsports ? 'font-medium' : ''}`}>{event.description}</p>
                 <div className="flex items-center text-dragon-cream/70 text-xs sm:text-sm">
                   <Users className="mr-2 flex-shrink-0" size={16} />
@@ -657,7 +657,7 @@ const Events = () => {
                 <div className="mt-3 sm:mt-4">
                   <button 
                     onClick={() => handleRegisterClick(event)}
-                    className={`w-full py-1.5 sm:py-2 px-4 ${event.isEsports ? 'bg-gradient-to-r from-dragon-orange/20 to-dragon-red/20 hover:from-dragon-orange/30 hover:to-dragon-red/30' : 'bg-gradient-to-r from-dragon-fire/10 to-dragon-fire/20 hover:from-dragon-fire/20 hover:to-dragon-fire/30'} text-dragon-cream rounded transition-all duration-300 group flex items-center justify-center text-sm sm:text-base`}>
+                    className={`w-full py-1.5 sm:py-2 px-4 ${event.isEsports ? 'bg-gradient-to-r from-dragon-orange/20 to-dragon-red/20 hover:from-dragon-orange/30 hover:to-dragon-red/30' : 'bg-gradient-to-r from-dragon-fire/10 to-dragon-fire/20 hover:from-dragon-fire/20 hover:to-dragon-fire/30'} text-dragon-cream rounded transition-all duration-300 group flex items-center justify-center text-sm sm:text-base relative z-50`}>
                     <span>{event.isEsports ? 'Register for Esports Event' : 'Register for Event'}</span>
                     <Flame size={14} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </button>

@@ -137,20 +137,32 @@ const EventModal = ({ event, onClose }) => {
           
           {activeTab === 'rules' && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <h3 className="text-base font-semibold text-dragon-cream mb-2">Rules</h3>
-                <ul className="space-y-2">
-                  {event.rules && event.rules.map((rule, index) => (
-                    <li key={index} className="text-dragon-cream/80 text-sm">{rule}</li>
+              <div className="space-y-4">
+                <div className="flex items-center text-dragon-cream/80">
+                  <Info className="mr-2 text-dragon-fire" size={18} />
+                  <h3 className="font-bold text-lg">Rules & Guidelines</h3>
+                </div>
+                <ul className="space-y-2 pl-6">
+                  {event.rules.map((rule, index) => (
+                    <li key={index} className="text-dragon-cream/80 flex items-start">
+                      <span className="text-dragon-fire mr-2">•</span>
+                      {rule}
+                    </li>
                   ))}
                 </ul>
               </div>
-              
-              <div>
-                <h3 className="text-base font-semibold text-dragon-cream mb-2">Prizes</h3>
-                <ul className="space-y-2">
-                  {event.prizes && event.prizes.map((prize, index) => (
-                    <li key={index} className="text-dragon-cream/80 text-sm">{prize}</li>
+
+              <div className="space-y-4">
+                <div className="flex items-center text-dragon-cream/80">
+                  <Award className="mr-2 text-dragon-fire" size={18} />
+                  <h3 className="font-bold text-lg">Prizes</h3>
+                </div>
+                <ul className="space-y-2 pl-6">
+                  {event.prizes.map((prize, index) => (
+                    <li key={index} className="text-dragon-cream/80 flex items-start">
+                      <span className="text-dragon-fire mr-2">•</span>
+                      {prize}
+                    </li>
                   ))}
                 </ul>
               </div>
