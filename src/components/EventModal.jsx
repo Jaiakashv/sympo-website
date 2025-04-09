@@ -140,31 +140,19 @@ const EventModal = ({ event, onClose }) => {
               <div>
                 <h3 className="text-base font-semibold text-dragon-cream mb-2">Rules</h3>
                 <ul className="space-y-2">
-                  {eventDetails.rules.map((rule, index) => (
-                    <li key={index} className="flex">
-                      <ChevronRight size={14} className="text-dragon-fire mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-dragon-cream/80 text-sm">{rule}</span>
-                    </li>
+                  {event.rules && event.rules.map((rule, index) => (
+                    <li key={index} className="text-dragon-cream/80 text-sm">{rule}</li>
                   ))}
                 </ul>
               </div>
               
               <div>
                 <h3 className="text-base font-semibold text-dragon-cream mb-2">Prizes</h3>
-                <div className="space-y-2">
-                  {eventDetails.prizes.map((prize, index) => (
-                    <div 
-                      key={index} 
-                      className={`p-2 rounded-md border ${
-                        index === 0 ? 'bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 border-yellow-500/30' :
-                        index === 1 ? 'bg-gradient-to-r from-gray-400/20 to-gray-500/20 border-gray-400/30' :
-                        'bg-gradient-to-r from-amber-700/20 to-amber-800/20 border-amber-700/30'
-                      }`}
-                    >
-                      <p className="text-dragon-cream/90 font-medium text-sm">{prize}</p>
-                    </div>
+                <ul className="space-y-2">
+                  {event.prizes && event.prizes.map((prize, index) => (
+                    <li key={index} className="text-dragon-cream/80 text-sm">{prize}</li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
           )}

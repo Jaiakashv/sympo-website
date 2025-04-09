@@ -10,7 +10,7 @@ const scheduleData = {
     },
     {
       time: '11:00 AM - 12:30 PM',
-      title: 'The Evolution of Eastern Dragons',
+      title: 'sports',
       location: 'Eastern Wing'
     },
     {
@@ -22,7 +22,8 @@ const scheduleData = {
       time: '5:00 PM - 7:00 PM',
       title: 'Welcome Reception & Fire Dance',
       location: 'Grand Courtyard'
-    }
+    },
+    
   ],
   'Day 2 - July 16': [
     {

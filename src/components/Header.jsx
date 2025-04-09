@@ -56,7 +56,7 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-4 lg:space-x-8">
-          {['Home', 'About', 'Schedule', 'Events', 'Register'].map((item) => {
+          {['Home', 'About', 'Schedule', 'Events'].map((item) => {
             const lowercaseItem = item.toLowerCase();
             const isActive = activeSection === lowercaseItem;
             
@@ -98,7 +98,7 @@ const Header = () => {
       }`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col space-y-4 sm:space-y-6">
-            {['Home', 'About', 'Schedule', 'Events', 'Register'].map((item) => {
+            {['Home', 'About', 'Schedule', 'Events'].map((item) => {
               const lowercaseItem = item.toLowerCase();
               const isActive = activeSection === lowercaseItem;
               
