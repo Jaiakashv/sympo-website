@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center gap-4 mb-2">
             <img 
               src="/public/lovable-uploads/mce-logo.png" 
-              alt="Meenakshi College of Engineering Logo" 
+              alt="" 
               className="w-23 h-23 sm:w-15 sm:h-15"
             />
             <div className="flex flex-col items-center sm:items-start">
