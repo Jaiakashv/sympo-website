@@ -10,7 +10,20 @@ const eventsData = {
       image: '/event-images/paper-presentation.jpg',
       detailImage: '/event-images/paper-presentation-detail.jpg',
       description: 'Present your research papers on innovative dragon-tech solutions and emerging technologies in draconic studies.',
-      host: 'Prof. Firebrand Academy'
+      host: 'Abitha vk Lija',
+      date: 'May 15, 2025',
+      time: '10:00 AM - 4:00 PM',
+      venue: 'Main Auditorium, Meenakshi College of Engineering',
+      team: '1-2 members',
+      contact: 'event.coordinator@mirai-enzan.com',
+      rules: [
+       "Paper must follow IEEE/APA format. " ,
+       "Content should be original (plagiarism < 20%). " ,
+       "Max 10-12 slides allowed. " ,
+       "Par cipants must submit papers before the deadline. " ,
+       "Judges' decisions are final. " ,
+      ],
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Technical Quiz',
@@ -95,7 +108,7 @@ const eventsData = {
     {
       name: 'Rangoli/Mehendi',
       type: 'Art Competition',
-      image: '/event-images/rangoli-mehendi.jpg',
+      image: '/event-images/rangoli.jpg',
       description: 'Create beautiful traditional designs inspired by dragon motifs, using colored powders for Rangoli or henna for Mehendi art.',
       host: 'Art Curator Flame Pattern'
     }
@@ -422,7 +435,6 @@ const Events = () => {
                 
                 <div className="mt-3 sm:mt-4">
                   <button 
-                    onClick={() => handleRegisterClick(event)}
                     className={`w-full py-1.5 sm:py-2 px-4 ${event.isEsports ? 'bg-gradient-to-r from-dragon-orange/20 to-dragon-red/20 hover:from-dragon-orange/30 hover:to-dragon-red/30' : 'bg-gradient-to-r from-dragon-fire/10 to-dragon-fire/20 hover:from-dragon-fire/20 hover:to-dragon-fire/30'} text-dragon-cream rounded transition-all duration-300 group flex items-center justify-center text-sm sm:text-base`}>
                     <span>{event.isEsports ? 'Register for Esports Event' : 'Register for Event'}</span>
                     <Flame size={14} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

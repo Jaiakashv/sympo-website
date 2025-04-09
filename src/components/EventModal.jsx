@@ -28,7 +28,7 @@ const EventModal = ({ event, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
       <div 
-        className="relative w-full max-w-3xl bg-gradient-to-b from-dragon-navy to-dragon-black rounded-lg overflow-hidden shadow-2xl shadow-dragon-fire/20 animate-scaleIn"
+        className="relative w-full max-w-3xl bg-gradient-to-b from-dragon-navy to-dragon-black rounded-lg overflow-hidden shadow-2xl shadow-dragon-fire/20 animate-scaleIn mt-8"
         onClick={e => e.stopPropagation()}
       >
         {/* Close button */}
