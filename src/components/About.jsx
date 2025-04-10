@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, Activity, Globe } from 'lucide-react';
+import { Flame, Activity, Globe, Award, Users, Trophy } from 'lucide-react';
 
 const About = () => {
   return (
@@ -34,31 +34,31 @@ const About = () => {
               <div className="pt-6 sm:pt-8">
                 <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 group hover-scale">
                   <div className="w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-gradient-to-br from-dragon-orange to-dragon-red flex items-center justify-center flex-shrink-0 shadow-lg shadow-dragon-fire/20 group-hover:shadow-dragon-fire/40 transition-all duration-300">
-                    <Flame className="text-white animate-flame" size={24} />
+                    <Award className="text-white animate-flame" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-dragon-cream">Expert-Led Sessions</h3>
-                    <p className="text-sm sm:text-base text-dragon-cream/70">Learn from legendary dragon masters</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-dragon-cream">Technical Excellence</h3>
+                    <p className="text-sm sm:text-base text-dragon-cream/70">Showcase your technical skills in various competitions</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 group hover-scale">
                   <div className="w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-gradient-to-br from-dragon-orange to-dragon-red flex items-center justify-center flex-shrink-0 shadow-lg shadow-dragon-fire/20 group-hover:shadow-dragon-fire/40 transition-all duration-300">
-                    <Activity className="text-white animate-flame" size={24} />
+                    <Users className="text-white animate-flame" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-dragon-cream">Competitive Tournaments</h3>
-                    <p className="text-sm sm:text-base text-dragon-cream/70">Test your skills in epic competitions</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-dragon-cream">Industry Experts</h3>
+                    <p className="text-sm sm:text-base text-dragon-cream/70">Learn from leading professionals and industry veterans</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-3 sm:gap-4 group hover-scale">
                   <div className="w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-gradient-to-br from-dragon-orange to-dragon-red flex items-center justify-center flex-shrink-0 shadow-lg shadow-dragon-fire/20 group-hover:shadow-dragon-fire/40 transition-all duration-300">
-                    <Globe className="text-white animate-flame" size={24} />
+                    <Trophy className="text-white animate-flame" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-dragon-cream">Global Community</h3>
-                    <p className="text-sm sm:text-base text-dragon-cream/70">Connect with dragon lovers worldwide</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-dragon-cream">Prestigious Awards</h3>
+                    <p className="text-sm sm:text-base text-dragon-cream/70">Win exciting prizes and recognition for your achievements</p>
                   </div>
                 </div>
               </div>
