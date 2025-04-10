@@ -107,9 +107,10 @@ const Footer = () => {
               &copy; 2025 Miralenzan Symposium. All rights reserved.
             </p>
             <div className="flex space-x-4 sm:space-x-6 mt-3 sm:mt-0">
-              <a href="#" className="text-dragon-cream/50 hover:text-dragon-fire text-xs sm:text-sm">Privacy Policy</a>
-              <a href="#" className="text-dragon-cream/50 hover:text-dragon-fire text-xs sm:text-sm">Terms of Service</a>
-              <a href="#" className="text-dragon-cream/50 hover:text-dragon-fire text-xs sm:text-sm">Cookie Policy</a>
+              <p className="text-dragon-cream/50 text-xs sm:text-sm animate-pulse hover:animate-none hover:text-dragon-fire transition-all duration-900 relative group">
+                Designed & Developed by Jaiakash
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-dragon-fire group-hover:w-full transition-all duration-300"></span>
+              </p>
             </div>
           </div>
         </div>

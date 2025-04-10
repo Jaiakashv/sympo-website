@@ -1,180 +1,146 @@
-import React, { useState } from 'react';
-import { X, Clock, MapPin, Users, Calendar, Award, Info, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { X, Clock, MapPin, Users, Calendar, Award, Info, Mail, ArrowRight } from 'lucide-react';
 
 const EventModal = ({ event, onClose }) => {
   const [activeTab, setActiveTab] = useState('details');
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   if (!event) return null;
 
-  // Example event details that would come from the event object
-  const eventDetails = {
-    date: "May 15, 2025",
-    time: "10:00 AM - 4:00 PM",
-    venue: "Main Auditorium, Meenakshi College of Engineering",
-    team: event.type.includes("Team") ? "2-4 members per team" : "Individual participation",
-    rules: [
-      "Participants must register in advance",
-      "College ID is mandatory",
-      "Time limits will be strictly enforced",
-      "Judges' decision will be final"
-    ],
-    prizes: [
-      "First Prize: ₹10,000",
-      "Second Prize: ₹5,000",
-      "Third Prize: ₹2,000"
-    ],
-    contact: "event.coordinator@mirai-enzan.com"
-  };
-
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
+    <div className="fixed inset-0 bg-dragon-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4 sm:p-6">
       <div 
-        className="relative w-full max-w-3xl bg-gradient-to-b from-dragon-navy to-dragon-black rounded-lg overflow-hidden shadow-2xl shadow-dragon-fire/20 animate-scaleIn mt-8"
-        onClick={e => e.stopPropagation()}
+        className={`bg-gradient-to-b from-dragon-navy to-dragon-black rounded-xl shadow-2xl border border-dragon-fire/20 w-full max-w-2xl max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
       >
-        {/* Close button */}
-        <button 
-          onClick={onClose}
-          className="absolute top-3 right-3 text-dragon-cream z-20 hover:text-dragon-fire transition-colors bg-dragon-black/50 rounded-full p-1"
-        >
-          <X size={20} />
-        </button>
-        
-        {/* Event poster header */}
-        <div className="relative h-32 md:h-40 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-t from-dragon-black to-transparent z-10"></div>
-          <img 
-            src={event.detailImage || event.image} 
-            alt={event.name}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
-            <h2 className="text-2xl font-bold text-dragon-cream">{event.name}</h2>
-            <p className="text-dragon-fire font-medium flex items-center text-sm">
-              {event.type}
-              {event.isEsports && (
-                <span className="ml-2 bg-gradient-to-r from-dragon-orange to-dragon-red px-2 py-0.5 rounded-full text-white text-xs font-bold animate-pulse">
-                  ESPORTS
-                </span>
-              )}
-            </p>
+        <div className="relative">
+          <button 
+            onClick={onClose}
+            className="absolute top-4 right-4 z-20 text-dragon-cream hover:text-dragon-fire transition-all duration-300 bg-dragon-black/50 rounded-full p-2 backdrop-blur-sm hover:bg-dragon-black/70 hover:scale-110"
+          >
+            <X size={20} />
+          </button>
+          
+          <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden rounded-t-xl">
+            <div className="absolute inset-0 bg-gradient-to-t from-dragon-black via-dragon-black/70 to-transparent z-10"></div>
+            <img 
+              src={event.detailImage || event.image} 
+              alt={event.name}
+              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5 z-20">
+              <h2 className="text-2xl sm:text-3xl font-bold text-dragon-cream drop-shadow-lg">{event.name}</h2>
+              <p className="text-dragon-fire font-medium text-base sm:text-lg flex items-center">
+                {event.type}
+                {event.isEsports && (
+                  <span className="ml-3 bg-gradient-to-r from-dragon-orange to-dragon-red px-3 py-1 rounded-full text-white text-xs font-bold animate-pulse">
+                    ESPORTS
+                  </span>
+                )}
+              </p>
+            </div>
           </div>
-        </div>
-        
-        {/* Tabs */}
-        <div className="flex border-b border-dragon-fire/20">
-          <button 
-            className={`px-4 py-2 text-sm font-medium flex items-center ${activeTab === 'details' ? 'text-dragon-fire border-b-2 border-dragon-fire' : 'text-dragon-cream/70 hover:text-dragon-cream'}`}
-            onClick={() => setActiveTab('details')}
-          >
-            <Info size={16} className="mr-2" />
-            Details
-          </button>
-          <button 
-            className={`px-4 py-2 text-sm font-medium flex items-center ${activeTab === 'rules' ? 'text-dragon-fire border-b-2 border-dragon-fire' : 'text-dragon-cream/70 hover:text-dragon-cream'}`}
-            onClick={() => setActiveTab('rules')}
-          >
-            <Award size={16} className="mr-2" />
-            Rules & Prizes
-          </button>
-        </div>
-        
-        {/* Content area */}
-        <div className="p-4">
-          {activeTab === 'details' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <h3 className="text-base font-semibold text-dragon-cream mb-2">About this Event</h3>
-                <p className="text-dragon-cream/80 text-sm mb-4">{event.description}</p>
-                
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <Calendar size={16} className="text-dragon-fire mr-2 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-dragon-cream font-medium text-sm">Date</p>
-                      <p className="text-dragon-cream/70 text-sm">{eventDetails.date}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <Clock size={16} className="text-dragon-fire mr-2 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-dragon-cream font-medium text-sm">Time</p>
-                      <p className="text-dragon-cream/70 text-sm">{eventDetails.time}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <MapPin size={16} className="text-dragon-fire mr-2 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-dragon-cream font-medium text-sm">Venue</p>
-                      <p className="text-dragon-cream/70 text-sm">{eventDetails.venue}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <Users size={16} className="text-dragon-fire mr-2 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-dragon-cream font-medium text-sm">Team Size</p>
-                      <p className="text-dragon-cream/70 text-sm">{eventDetails.team}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex flex-col">
-                <div className="rounded-lg bg-dragon-navy/50 p-3 border border-dragon-fire/10 mb-4">
-                  <h3 className="text-base font-semibold text-dragon-cream mb-1">Host</h3>
-                  <p className="text-dragon-cream/80 text-sm">{event.host}</p>
-                </div>
-                
-                <div className="rounded-lg bg-dragon-navy/50 p-3 border border-dragon-fire/10">
-                  <h3 className="text-base font-semibold text-dragon-cream mb-1">Contact</h3>
-                  <p className="text-dragon-cream/80 text-sm">{eventDetails.contact}</p>
-                </div>
-              </div>
-            </div>
-          )}
-          
-          {activeTab === 'rules' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="flex items-center text-dragon-cream/80">
-                  <Info className="mr-2 text-dragon-fire" size={18} />
-                  <h3 className="font-bold text-lg">Rules & Guidelines</h3>
-                </div>
-                <ul className="space-y-2 pl-6">
-                  {event.rules.map((rule, index) => (
-                    <li key={index} className="text-dragon-cream/80 flex items-start">
-                      <span className="text-dragon-fire mr-2">•</span>
-                      {rule}
-                    </li>
-                  ))}
-                </ul>
-              </div>
 
-              <div className="space-y-4">
-                <div className="flex items-center text-dragon-cream/80">
-                  <Award className="mr-2 text-dragon-fire" size={18} />
-                  <h3 className="font-bold text-lg">Prizes</h3>
-                </div>
-                <ul className="space-y-2 pl-6">
-                  {event.prizes.map((prize, index) => (
-                    <li key={index} className="text-dragon-cream/80 flex items-start">
-                      <span className="text-dragon-fire mr-2">•</span>
-                      {prize}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="p-5 sm:p-6">
+            <div className="flex space-x-3 mb-5">
+              <button
+                onClick={() => setActiveTab('details')}
+                className={`px-4 py-2 text-sm sm:text-base rounded-full transition-all duration-300 ${
+                  activeTab === 'details'
+                    ? 'bg-gradient-to-r from-dragon-fire to-dragon-orange text-dragon-cream shadow-lg shadow-dragon-fire/20'
+                    : 'bg-dragon-navy text-dragon-cream/70 hover:bg-dragon-navy/80'
+                }`}
+              >
+                Details
+              </button>
+              <button
+                onClick={() => setActiveTab('rules')}
+                className={`px-4 py-2 text-sm sm:text-base rounded-full transition-all duration-300 ${
+                  activeTab === 'rules'
+                    ? 'bg-gradient-to-r from-dragon-fire to-dragon-orange text-dragon-cream shadow-lg shadow-dragon-fire/20'
+                    : 'bg-dragon-navy text-dragon-cream/70 hover:bg-dragon-navy/80'
+                }`}
+              >
+                Rules & Prizes
+              </button>
             </div>
-          )}
-          
-          <button 
-            className="w-full mt-4 px-4 py-2 bg-gradient-to-r from-dragon-orange to-dragon-red text-white font-bold rounded-md hover:from-dragon-red hover:to-dragon-orange transition-all hover:shadow-lg hover:shadow-dragon-fire/30 focus:ring-2 focus:ring-dragon-fire focus:ring-offset-2 focus:ring-offset-dragon-black text-sm"
-            onClick={() => window.open('https://forms.gle/your-registration-form-link', '_blank')}
-          >
-            Register Now
-          </button>
+
+            {activeTab === 'details' && (
+              <div className="space-y-4 sm:space-y-5">
+                <div className="grid grid-cols-2 gap-4 sm:gap-5">
+                  <div className="flex items-center text-dragon-cream/80 bg-dragon-navy/50 p-3 rounded-lg">
+                    <Calendar className="mr-3 text-dragon-fire" size={18} />
+                    <span className="text-sm sm:text-base">{event.date}</span>
+                  </div>
+                  <div className="flex items-center text-dragon-cream/80 bg-dragon-navy/50 p-3 rounded-lg">
+                    <Clock className="mr-3 text-dragon-fire" size={18} />
+                    <span className="text-sm sm:text-base">{event.time}</span>
+                  </div>
+                  <div className="flex items-center text-dragon-cream/80 bg-dragon-navy/50 p-3 rounded-lg">
+                    <MapPin className="mr-3 text-dragon-fire" size={18} />
+                    <span className="text-sm sm:text-base">{event.venue}</span>
+                  </div>
+                  <div className="flex items-center text-dragon-cream/80 bg-dragon-navy/50 p-3 rounded-lg">
+                    <Users className="mr-3 text-dragon-fire" size={18} />
+                    <span className="text-sm sm:text-base">{event.team}</span>
+                  </div>
+                </div>
+                <div className="flex items-center text-dragon-cream/80 bg-dragon-navy/50 p-3 rounded-lg">
+                  <Mail className="mr-3 text-dragon-fire" size={18} />
+                  <span className="text-sm sm:text-base">{event.contact}</span>
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'rules' && (
+              <div className="space-y-5">
+                <div className="space-y-4">
+                  <div className="flex items-center text-dragon-cream/80">
+                    <Info className="mr-3 text-dragon-fire" size={18} />
+                    <h3 className="font-bold text-lg sm:text-xl">Rules & Guidelines</h3>
+                  </div>
+                  <ul className="space-y-3 pl-4">
+                    {event.rules.map((rule, index) => (
+                      <li key={index} className="text-dragon-cream/80 flex items-start text-sm sm:text-base bg-dragon-navy/30 p-3 rounded-lg">
+                        <span className="text-dragon-fire mr-2">•</span>
+                        {rule}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="flex items-center text-dragon-cream/80">
+                    <Award className="mr-3 text-dragon-fire" size={18} />
+                    <h3 className="font-bold text-lg sm:text-xl">Prizes</h3>
+                  </div>
+                  <ul className="space-y-3 pl-4">
+                    {event.prizes.map((prize, index) => (
+                      <li key={index} className="text-dragon-cream/80 flex items-start text-sm sm:text-base bg-dragon-navy/30 p-3 rounded-lg">
+                        <span className="text-dragon-fire mr-2">•</span>
+                        {prize}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
+
+            <div className="mt-6">
+              <a
+                href="https://forms.gle/your-form-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-dragon-fire to-dragon-orange text-dragon-cream rounded-lg hover:from-dragon-orange hover:to-dragon-fire transition-all duration-300 text-base font-medium shadow-lg shadow-dragon-fire/20 hover:shadow-xl hover:shadow-dragon-fire/30 transform hover:scale-[1.02]"
+              >
+                Register Now
+                <ArrowRight className="ml-2" size={18} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
