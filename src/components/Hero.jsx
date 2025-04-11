@@ -1,9 +1,28 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ChevronDown, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const containerRef = useRef(null);
   
+  const calculateTimeLeft = () => {
+    const eventDate = new Date('2025-04-26T00:00:00');
+    const difference = eventDate - new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       const el = containerRef.current;
@@ -22,8 +41,13 @@ const Hero = () => {
     
     window.addEventListener('mousemove', handleMouseMove);
     
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+    
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      clearInterval(timer);
     };
   }, []);
 
@@ -101,6 +125,31 @@ const Hero = () => {
             />
           </div>
           
+          <div className="countdown text-dragon-cream font-bold text-base sm:text-lg md:text-xl mt-4 flex justify-center items-center space-x-4 sm:space-x-6">
+            {Object.keys(timeLeft).length > 0 ? (
+              <>
+                <div className="flex flex-col items-center bg-dragon-navy p-2 sm:p-4 rounded-lg shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105">
+                  <span className="text-4xl sm:text-5xl md:text-6xl text-dragon-fire transition-colors duration-500 ease-in-out hover:text-dragon-red">{timeLeft.days}</span>
+                  <span className="text-sm sm:text-base text-dragon-cream/80 mt-1 sm:mt-2">Days</span>
+                </div>
+                <div className="flex flex-col items-center bg-dragon-navy p-2 sm:p-4 rounded-lg shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105">
+                  <span className="text-4xl sm:text-5xl md:text-6xl text-dragon-fire transition-colors duration-500 ease-in-out hover:text-dragon-red">{timeLeft.hours}</span>
+                  <span className="text-sm sm:text-base text-dragon-cream/80 mt-1 sm:mt-2">Hours</span>
+                </div>
+                <div className="flex flex-col items-center bg-dragon-navy p-2 sm:p-4 rounded-lg shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105">
+                  <span className="text-4xl sm:text-5xl md:text-6xl text-dragon-fire transition-colors duration-500 ease-in-out hover:text-dragon-red">{timeLeft.minutes}</span>
+                  <span className="text-sm sm:text-base text-dragon-cream/80 mt-1 sm:mt-2">Minutes</span>
+                </div>
+                <div className="flex flex-col items-center bg-dragon-navy p-2 sm:p-4 rounded-lg shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105">
+                  <span className="text-4xl sm:text-5xl md:text-6xl text-dragon-fire transition-colors duration-500 ease-in-out hover:text-dragon-red">{timeLeft.seconds}</span>
+                  <span className="text-sm sm:text-base text-dragon-cream/80 mt-1 sm:mt-2">Seconds</span>
+                </div>
+              </>
+            ) : (
+              <span>Event Started!</span>
+            )}
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-6 sm:mt-8 px-4">
             <a href="#schedule" className="px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base font-bold text-dragon-cream border-2 border-dragon-fire/50 rounded-md transition-all hover:bg-dragon-fire/10 hover:border-dragon-fire hover:scale-105 duration-300 relative overflow-hidden group">
               <span className="relative z-10">View Schedule</span>

@@ -43,17 +43,18 @@ const Header = () => {
         : 'bg-transparent py-2 sm:py-4'
     }`}>
       <div className="container mx-auto px-4 sm:px-6 flex justify-between items-center">
-        <div className="flex items-center">
-          <div className={`relative group ${scrolled ? 'scale-90' : ''} transition-all duration-300`}>
-            <div className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity animate-pulse"></div>
-            <img 
-              src="/lovable-uploads/226d236f-9149-4ff6-adcb-6088d5053c46.png" 
-              alt="Miralenzan Logo" 
-              className="h-10 sm:h-12 md:h-16 rounded-full border-2 border-dragon-fire/40 relative z-10 transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
+        <div className="flex items-center space-x-2">
+          <img 
+            src="/lovable-uploads/226d236f-9149-4ff6-adcb-6088d5053c46.png" 
+            alt="Miralenzan Logo" 
+            className="h-10 sm:h-12 md:h-16 rounded-full border-2 border-dragon-fire/40 relative z-10 transition-transform duration-300 group-hover:scale-105"
+          />
+          <span 
+            className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-dragon-orange to-dragon-red bg-clip-text text-transparent animate-pulse"
+          >
+            Mirai Enzan
+          </span>
         </div>
-
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-4 lg:space-x-8">
           {['Home', 'About', 'Schedule', 'Events'].map((item) => {
