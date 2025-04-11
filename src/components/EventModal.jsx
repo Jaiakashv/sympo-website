@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Clock, MapPin, Users, Calendar, Award, Info, Mail, ArrowRight } from 'lucide-react';
+import { X, Clock, MapPin, Users, Calendar, Award, Info, Phone, ArrowRight } from 'lucide-react';
 
 const EventModal = ({ event, onClose }) => {
   const [activeTab, setActiveTab] = useState('details');
@@ -12,10 +12,8 @@ const EventModal = ({ event, onClose }) => {
   if (!event) return null;
 
   return (
-    <div className="fixed inset-0 bg-dragon-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4 sm:p-6">
-      <div 
-        className={`bg-gradient-to-b from-dragon-navy to-dragon-black rounded-xl shadow-2xl border border-dragon-fire/20 w-full max-w-2xl max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
-      >
+    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+      <div className="bg-gradient-to-b from-dragon-navy to-dragon-black text-dragon-cream rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto mt-16 sm:mt-20">
         <div className="relative">
           <button 
             onClick={onClose}
@@ -89,7 +87,7 @@ const EventModal = ({ event, onClose }) => {
                   </div>
                 </div>
                 <div className="flex items-center text-dragon-cream/80 bg-dragon-navy/50 p-3 rounded-lg">
-                  <Mail className="mr-3 text-dragon-fire" size={18} />
+                  <Phone className="mr-3 text-dragon-fire" size={18} />
                   <span className="text-sm sm:text-base">{event.contact}</span>
                 </div>
               </div>

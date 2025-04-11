@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Flame, Users, Sparkles, Music, Trophy, X } from 'lucide-react';
+import { Flame, Users, Sparkles, Music, Trophy, X, Calendar, Clock, MapPin, Phone } from 'lucide-react';
 import EventModal from './EventModal';
 
 const eventsData = {
@@ -9,12 +9,12 @@ const eventsData = {
       type: 'Competition',
       image: '/event-images/paper-presentation.jpg',
       description: 'Present your research papers on innovative tech solutions and emerging technologies in specialized studies.',
-      host: 'Abitha vk Lija',
+      host: 'Nikhil Srinivasan S,Sanjana V',
       date: 'May 15, 2025',
       time: '10:00 AM - 4:00 PM',
       venue: 'Main Auditorium, Meenakshi College of Engineering',
       team: '1-2 members',
-      contact: 'event.coordinator@mirai-enzan.com',
+      contact: 'nikhil-6369510662, sanjana V-9940448141',
       rules: [
         "Paper must follow IEEE/APA format.",
         "Content should be original (plagiarism < 20%).",
@@ -22,28 +22,38 @@ const eventsData = {
         "Participants must submit papers before the deadline.",
         "Judges' decisions are final."
       ],
-      prizes: ['First Prize', 'Second Prize', 'Third Prize']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Technical Quiz',
       type: 'Quiz',
       image: '/event-images/tech-quiz.jpg',
       description: 'Test your technical knowledge and problem-solving skills in this fast-paced quiz covering various engineering topics.',
-      host: 'Tech Master Ignis',
+      host: 'Neha R , Shalini B',
+      date: 'May 15, 2025',
+      time: '10:00 AM - 4:00 PM',
+      venue: 'Main Auditorium, Meenakshi College of Engineering',
+      team: '1-2 members',
+      contact: 'neha-9884373131, shalini-8072196018',
       rules: [
         "Each question has a time limit.",
         "No use of mobile phones or external help.",
         "Negative marking for wrong answers (if applicable).",
         "Judges' decision is final."
       ],
-      prizes: ['Top Tech Gadget', 'Certification Voucher']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Sparkathon',
       type: 'Competition',
       image: '/event-images/hack.jpg',
       description: 'A 6-hour coding marathon to develop innovative solutions for complex challenges and technological problems.',
-      host: 'Code Foundation',
+      host: 'Ravi Vishnu D , Axin Ricco R ',
+      date: 'May 15, 2025',
+      time: '10:00 AM - 4:00 PM',
+      venue: 'Main Auditorium, Meenakshi College of Engineering',
+      team: '1-2 members',
+      contact: 'Ravi Vishnu -7305651782 , Axin Ricco R – 7305539655',
       rules: [
         "Teams must develop a solution based on the given problem statement.",
         "Allowed languages: Python, Java, C++, etc.",
@@ -51,42 +61,20 @@ const eventsData = {
         "Judges evaluate based on code efficiency, correctness, and innovation.",
         "No plagiarism—only original work is accepted."
       ],
-      prizes: ['Top Prize', 'Runner Up']
+      prizes: ['First Prize', 'Second Prize']
     },
-    // {
-    //   name: 'Tackle the Cyber',
-    //   type: 'Competition',
-    //   image: '/event-images/tackle-the-cyber.jpg',
-    //   description: 'Learn cybersecurity techniques to protect critical data systems from external threats in this hands-on workshop.',
-    //   host: 'Security Expert Shield',
-    //   rules: [
-    //     "Participants must not harm or hack event infrastructure.",
-    //     "No unauthorized tools or pre-written scripts.",
-    //     "Teams must document steps taken to solve challenges.",
-    //     "Any unethical behavior leads to disqualification."
-    //   ],
-    //   prizes: ['Cyber Guardian Trophy', 'Security Tool Subscription']
-    // },
-    {
-      name: 'Hardware Resemble',
-      type: 'Competition',
-      image: '/event-images/hard.jpg',
-      description: 'Design and build functional hardware prototypes for management, training, or environmental monitoring.',
-      host: 'Master Engineer Tech',
-      rules: [
-        "Teams must assemble/disassemble hardware components within the time limit.",
-        "Participants should identify and explain each part.",
-        "Use of reference materials is not allowed.",
-        "Teams are judged on speed, accuracy, and explanation of components."
-      ],
-      prizes: ['Best Hardware Design', 'Component Master Award']
-    },
+  
     {
       name: 'UI/UX Design',
       type: 'competition',
       image: '/event-images/ui-ux.jpg',
       description: 'Create intuitive interfaces and experiences for various applications and management systems.',
-      host: 'Design Director Interface',
+      host: 'Lalitha Lochana G ,Seethaladevi S R ',
+      date: 'May 15, 2025',
+      time: '10:00 AM - 4:00 PM',
+      venue: 'Main Auditorium, Meenakshi College of Engineering',
+      team: '1-2 members',
+      contact: 'Lalitha Lochana G – 6382420560 , Seethaladevi S R – 6369567195',
       rules: [
         "Participants must design a UI/UX prototype for a given problem statement.",
         "Allowed tools: Figma, Adobe XD, Canva, or any other design software.",
@@ -100,12 +88,12 @@ const eventsData = {
       type: 'Competition',
       image: '/event-images/debug.jpg',
       description: 'Solve complex coding problems and showcase your programming skills.',
-      host: 'John Doe',
+      host: 'Yuva Shree B ,Thirumagal S ',
       date: 'June 10, 2025',
       time: '9:00 AM - 3:00 PM',
       venue: 'Computer Lab, Meenakshi College of Engineering',
       team: 'Individual',
-      contact: 'coding.challenge@mirai-enzan.com',
+      contact: 'Yuva Shree B – 6382141895 , Thirumagal S – 9841888837',
       rules: [
         "Participants will be given buggy code and must debug it within the time limit.",
         "Allowed languages: C, C++, Java, Python.",
@@ -266,7 +254,7 @@ const eventsData = {
         "Props are allowed but must be arranged by participants.",
         "Judging criteria: Choreography, synchronization, expressions, and energy."
       ],
-      prizes: ['Best Dance Performance', 'Most Energetic Dancer']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Mime',
@@ -280,7 +268,7 @@ const eventsData = {
         "Performances should be creative, meaningful, and engaging.",
         "Judging criteria: Concept, expressions, coordination, and impact."
       ],
-      prizes: ['Best Mime Act', 'Most Expressive Performer']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Body Building',
@@ -293,7 +281,7 @@ const eventsData = {
         "No external assistance (supplements, oils, etc.).",
         "Judging criteria: Muscle definition, symmetry, and strength endurance."
       ],
-      prizes: ['Titan Trophy', 'Fitness Gear Sponsorship']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Fashion Show',
@@ -307,143 +295,131 @@ const eventsData = {
         "Participants must maintain professionalism on stage.",
         "Judging criteria: Creativity, confidence, outfit presentation, and team coordination."
       ],
-      prizes: ['Best Design', 'Top Model']
+      prizes: ['First Prize', 'Second Prize']
     }
   ],
   sports: [
-    {
-      name: 'Box Cricket (Boys)',
-      type: 'Sports',
-      image: '/event-images/box-cricket.jpg',
-      description: 'Participate in this thrilling box cricket tournament.',
-      host: 'Michael Brown',
-      date: 'September 15, 2025',
-      time: '10:00 AM - 6:00 PM',
-      venue: 'Sports Ground, Meenakshi College of Engineering',
-      team: 'Teams of 6',
-      contact: 'box.cricket@mirai-enzan.com',
-      rules: [
-        "Only underarm bowling is allowed.",
-        "No LBW; direct hit on stumps = out.",
-        "If the ball hits the net/wall before a fielder catches it, it's not out.",
-        "Standard cricket scoring applies.",
-        "Umpire's decision is final."
-      ],
-      prizes: ['Championship Trophy', 'Medals']
-    },
     {
       name: 'Football (Boys)',
       type: 'Tournament',
       image: '/event-images/football.jpg',
       description: 'Battle it out on the field in this exciting football tournament featuring tactical gameplay and team coordination.',
-      host: 'Football Captain',
+      host: 'Inbathamizhan,Jared Benson.S',
+      date: 'September 15, 2025',
+      time: '10:00 AM - 6:00 PM',
+      venue: 'Sports Ground, Meenakshi College of Engineering',
+      team: 'Teams of 6',
+      contact: 'Inbathamizhan +91 90808 83580,Jared Benson.S-9566079126',
       rules: [
         "No offside rule.",
         "Rolling substitutions allowed.",
-        "Rough tackles, handballs, and misconduct lead to penalties.",
+        "Rough tackles, handballs, and misconduct lead to cards.",
         "Referee's decision is final."
       ],
-      prizes: ['Golden Boot Trophy', 'Best Team Award']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Badminton (Boys & Girls)',
       type: 'Tournament',
       image: '/event-images/badminton.jpg',
       description: 'Showcase your agility and precision in singles and doubles badminton matches for both boys and girls.',
-      host: 'Badminton Pro',
+      host: 'Harish D,BHAGAVATHI GANESH ES',
+      date: 'September 15, 2025',
+      time: '10:00 AM - 6:00 PM',
+      venue: 'Sports Ground, Meenakshi College of Engineering',
+      team: 'Teams of 6',
+      contact: 'Harish D 7358-591836,BHAGAVATHI GANESH ES 9025298871',
       rules: [
         "Standard badminton rules apply.",
         "Players must bring their own racquets; shuttlecock will be provided.",
         "Umpire's decision is final."
       ],
-      prizes: ['Gold Medal (Singles/Doubles)', 'Silver Medal (Singles/Doubles)']
-    },
-    {
-      name: 'Kho-Kho (Girls)',
-      type: 'Tournament',
-      image: '/event-images/kho-kho.jpg',
-      description: 'Participate in this traditional Indian sport that tests speed, strategy, and teamwork in an exciting tag-based format.',
-      host: 'Team Leader',
-      rules: [
-        "Standard Kho-Kho rules apply.",
-        "Defenders must avoid getting touched by chasers.",
-        "Umpire's decision is final."
-      ],
-      prizes: ['Kho-Kho Champions Cup', 'Best Chaser Award']
-    },
-    {
-      name: 'Throwball (Girls)',
-      type: 'Tournament',
-      image: '/event-images/throwball.jpg',
-      description: 'Compete in this non-contact ball sport that combines elements of volleyball and handball for female athletes.',
-      host: 'Coach',
-      rules: [
-        "Ball must be caught and thrown (no volleyball-style hits).",
-        "Each team gets three touches before returning the ball.",
-        "No stepping on the boundary line while serving.",
-        "Referee's decision is final."
-      ],
-      prizes: ['Throwball Champions Trophy', 'Best Thrower Award']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Carrom',
       type: 'Competition',
       image: '/event-images/carrom.jpg',
       description: 'Test your precision and strategy in this tabletop game that combines elements of billiards, shuffleboard and checkers.',
-      host: 'Carrom Master',
+      host: 'Srijith Kumar R , Abinaya D',
+      date: 'September 15, 2025',
+      time: '10:00 AM - 6:00 PM',
+      venue: 'Sports Ground, Meenakshi College of Engineering',
+      team: 'Teams of 6',
+      contact: 'Srijith Kumar R- 80561 46992,Abinaya D - 89253 01438',
       rules: [
         "Standard carrom board rules apply.",
         "No external powder allowed.",
         "Referee's decision is final."
       ],
-      prizes: ['Carrom Champion', 'Precision Shot Award']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Chess',
       type: 'Tournament',
       image: '/event-images/chess.jpg',
       description: 'Challenge your strategic thinking and foresight in this classic battle of minds on the checkered board.',
-      host: 'Grandmaster',
+      host: 'Siva sankari',
+      date: 'September 15, 2025',
+      time: '10:00 AM - 6:00 PM',
+      venue: 'Sports Ground, Meenakshi College of Engineering',
+      team: 'Teams of 6',
+      contact: 'Siva sankari - 73587 82004',
       rules: [
         "Standard FIDE chess rules apply.",
         "Players must not use external help (e.g., mobile phones).",
         "Arbiter's decision is final."
       ],
-      prizes: ['Chess Champion Trophy', 'Mastermind Award']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'FF-MAX',
       type: 'Esports',
       image: '/event-images/ff-max.jpg',
       description: 'Compete in this popular battle royale mobile game tournament, showcasing your survival and combat skills in a premiere Esports competition.',
-      host: 'Gaming Champion',
+      host: 'Yuvaraj , Durai Pandiyan',
+      date: 'September 15, 2025',
+      time: '10:00 AM - 6:00 PM',
+      venue: 'Sports Ground, Meenakshi College of Engineering',
+      team: 'Teams of 6',
+      contact: 'Yuvaraj 73052 96377 , Durai Pandiyan 9025258855 ',
       isEsports: true,
       rules: [
         "Standard Free Fire tournament rules apply.",
         "Use of hacks or unfair gameplay leads to disqualification.",
         "Players must have their own devices and stable internet."
       ],
-      prizes: ['Top Squad Award', 'Gaming Gear']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'CrossFit',
       type: 'Competition',
       image: '/event-images/crossfit.jpg',
       description: 'Test your strength, endurance and overall fitness in this high-intensity functional training competition.',
-      host: 'Fitness Coach',
+      host: 'Charles Prabakaran , Sanjay Kumar E ',
+      date: 'September 15, 2025',
+      time: '10:00 AM - 6:00 PM',
+      venue: 'Sports Ground, Meenakshi College of Engineering',
+      team: 'Teams of 6',
+      contact: 'Charles Prabakaran - 8056044498, Sanjay Kumar E- 6382369043',
       rules: [
         "Participants must complete challenges in the given time.",
         "Judges will assess form, stamina, and completion.",
         "Any misconduct or failure to complete tasks = disqualification."
       ],
-      prizes: ['Fittest Athlete Award', 'Endurance Champion']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'BGMI',
       type: 'Esports',
       image: '/event-images/bgmi.jpg',
       description: 'Battle for victory in this tactical mobile shooter game tournament requiring teamwork and strategic thinking. A flagship Esports event for mobile gamers.',
-      host: 'Esports Director',
+      host: 'Asarudeen.A ,Arun P.A ',
+      date: 'September 15, 2025',
+      time: '10:00 AM - 6:00 PM',
+      venue: 'Sports Ground, Meenakshi College of Engineering',
+      team: 'Teams of 6',
+      contact: 'Asarudeen.A- 84283 87745 , Arun P.A 90252 58855',
       isEsports: true,
       rules: [
         "Standard BGMI tournament rules apply.",
@@ -451,7 +427,7 @@ const eventsData = {
         "Players must use their own mobile devices.",
         "Admin decision is final."
       ],
-      prizes: ['Chicken Dinner Champion', 'Top Fragger Award']
+      prizes: ['First Prize', 'Second Prize']
     }
   ]
 };
