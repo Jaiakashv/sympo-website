@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Flame, Users, Sparkles, Music, Trophy, X, Calendar, Clock, MapPin, Phone } from 'lucide-react';
+import { Flame, Users, Sparkles, Music, Trophy, X, Calendar, Clock, MapPin, Phone, Computer } from 'lucide-react';
 import EventModal from './EventModal';
 
 const eventsData = {
@@ -525,7 +525,7 @@ const Events = () => {
             }`}
           >
             <span className="relative z-10 flex items-center">
-              {activeTab === 'technical' && <Flame className="mr-1.5 animate-flame" size={16} />}
+              {activeTab === 'technical' && <Computer className="mr-1.5" size={16} />}
               Technical
             </span>
             {activeTab !== 'technical' && (

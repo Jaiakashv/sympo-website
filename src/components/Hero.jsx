@@ -5,7 +5,7 @@ const Hero = () => {
   const containerRef = useRef(null);
   
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2025-04-26T00:00:00');
+    const eventDate = new Date('2025-04-25T00:00:00');
     const difference = eventDate - new Date();
     let timeLeft = {};
 

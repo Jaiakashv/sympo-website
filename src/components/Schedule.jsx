@@ -2,55 +2,95 @@ import React, { useState } from 'react';
 import { Clock, MapPin, Calendar } from 'lucide-react';
 
 const scheduleData = {
-  'Day 1 - July 15': [
+  'Day 1 - April 25': [
     {
       time: '9:00 AM - 10:30 AM',
       title: 'Opening Ceremony',
       location: 'Main Hall'
     },
     {
-      time: '11:00 AM - 12:30 PM',
+      time: '11:00 Am - 12:00 PM',
+      title: 'UI/UX',
+      location: 'TBD'
+    },
+    {
+      time: '9:00 AM - 12:00 PM',
+      title: 'Sparkathon',
+      location: 'TBD'
+    },
+    {
+      time: '9:00 AM - 1:00 PM',
+      title: 'Debugging',
+      location: 'TBD'
+    },
+    {
+      time: '9:00 AM - 1:00 PM',
+      title: 'Technical Quiz',
+      location: 'TBD'
+    },
+    {
+      time: '9:00 AM - 1:00 PM',
+      title: 'Paper Presentation',
+      location: 'TBD'
+    },
+    {
+      time: '8:00 AM - 2:00 PM',
       title: 'sports',
-      location: 'Eastern Wing'
+      location: 'Turf'
     },
     {
-      time: '2:00 PM - 4:00 PM',
-      title: 'Flame Control Workshop',
-      location: 'Fire Pit Arena'
+      time: '9:00 AM - 12:00 PM',
+      title: 'FF-MAX & BGMI',
+      location: 'TBD'
     },
     {
-      time: '5:00 PM - 7:00 PM',
-      title: 'Welcome Reception & Fire Dance',
-      location: 'Grand Courtyard'
+      time: '9:00 AM - 12:00 PM',
+      title: 'Chess , Carrom , Cross fit',
+      location: 'Gym Arena- 2nd floor'
     },
     
+    
+    
   ],
-  'Day 2 - July 16': [
+  'Day 2 - April 26': [
     {
-      time: '9:00 AM - 10:30 AM',
-      title: 'Dragons in Modern Media',
-      location: 'Media Center'
+      time: '10:00 AM - 11:00 AM',
+      title: 'Cinematic Quiz',
+      location: 'TBD'
     },
     {
-      time: '11:00 AM - 1:00 PM',
-      title: 'Scale Crafting Competition',
-      location: 'Artisan Hall'
+      time: '10:00 AM - 11:00 PM',
+      title: 'Anime Quiz',
+      location: 'TBD'
     },
     {
-      time: '2:30 PM - 4:00 PM',
-      title: 'Tournament of Champions',
-      location: 'Grand Arena'
+      time: '11:00 AM - 12:00 PM',
+      title: 'Debate',
+      location: 'TBD'
+    },
+    
+    
+    {
+      time: '1:00 PM - 4:00 PM',
+      title: 'IPL Mock Auction',
+      location: 'TBD'
     },
     {
-      time: '5:00 PM - Late',
-      title: 'Closing Ceremony & Farewell Feast',
-      location: 'Grand Courtyard'
-    }
+      time: '11:00 AM - 12:00 PM',
+      title: 'Rangoli/Mehandi',
+      location: 'TBD'
+    },
+    {
+      time: '11:00 AM - 12:30 PM',
+      title: 'Portrait Painting',
+      location: 'TBD'
+    },
+    
   ]
 };
 
 const Schedule = () => {
-  const [activeDay, setActiveDay] = useState('Day 1 - July 15');
+  const [activeDay, setActiveDay] = useState('Day 1 - April 25');
 
   return (
     <section id="schedule" className="py-8 sm:py-12 bg-gradient-to-b from-dragon-navy to-dragon-black relative overflow-hidden">
