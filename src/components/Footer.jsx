@@ -114,7 +114,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-dragon-fire/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-dragon-cream/50 text-sm sm:text-base">
-            © 2024 Mirai Enzan. All rights reserved.
+            © 2025 Mirai Enzan. All rights reserved.
           </p>
           <div className="flex space-x-4 sm:space-x-6">
             <p className="text-dragon-cream/50 text-sm sm:text-base animate-pulse hover:animate-none hover:text-dragon-fire transition-all duration-900 relative group">
