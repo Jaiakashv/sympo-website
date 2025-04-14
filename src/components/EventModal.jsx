@@ -129,7 +129,7 @@ const EventModal = ({ event, onClose }) => {
 
             <div className="mt-6">
               <a
-                href="https://forms.gle/your-form-link"
+                href={event.formLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-dragon-fire to-dragon-orange text-dragon-cream rounded-lg hover:from-dragon-orange hover:to-dragon-fire transition-all duration-300 text-base font-medium shadow-lg shadow-dragon-fire/20 hover:shadow-xl hover:shadow-dragon-fire/30 transform hover:scale-[1.02]"

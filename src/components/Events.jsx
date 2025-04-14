@@ -15,6 +15,7 @@ const eventsData = {
       venue: 'TBD',
       team: '1-4 members',
       contact: 'nikhil-6369510662, s.sooriya-9176313108',
+      formLink: 'https://forms.gle/paper-presentation-form',
       rules: [
         "Content should be original (plagiarism < 20%).",
         "Max 7-8 slides allowed.",
@@ -34,6 +35,7 @@ const eventsData = {
       venue: 'TBD',
       team: '1-3 members',
       contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
+      formLink: 'https://forms.gle/technical-quiz-form',
       rules: [
         "Each question has a time limit.",
         "No use of mobile phones or external help.",
@@ -53,6 +55,7 @@ const eventsData = {
       venue: 'CSE LAB',
       team: '2-3 members',
       contact: 'Ravi Vishnu -7305651782 ,Jaiakash V- 8122535240',
+      formLink: 'https://forms.gle/sparkathon-form',
       rules: [
         "Teams must develop a solution based on the given problem statement.",
         "Allowed languages: Python, Java, C++,React etc.",
@@ -74,6 +77,7 @@ const eventsData = {
       venue: 'CSE LAB',
       team: '1-2 members',
       contact: 'Lalitha Lochana G – 6382420560 ,Kamala Sruthi M - 9499979590',
+      formLink: 'https://forms.gle/uiux-form',
       rules: [
         "Participants must design a UI/UX prototype for a given problem statement.",
         "Allowed tools: Figma, Adobe XD, Canva, or any other design software.",
@@ -93,6 +97,7 @@ const eventsData = {
       venue: 'Computer Lab, Meenakshi College of Engineering',
       team: '1-2',
       contact: 'Yuva Shree B – 6382141895 , Thirumagal S – 9841888837',
+      formLink: 'https://forms.gle/debugging-form',
       rules: [
         "Participants will be given buggy code and must debug it within the time limit.",
         "Allowed languages: C, C++, Java, Python.",
@@ -114,6 +119,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Sanjai S - 9345524166 ,Naveena D - 6385270719 ',
+      formLink: 'https://forms.gle/cinematic-quiz-form',
       rules: [
         "Only one answer per team per question.",
         "No use of mobile phones or external help.",
@@ -133,6 +139,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Durga Deeksha S-9080690564 , Sree Nandhini N -9025645542',
+      formLink: 'https://forms.gle/bridge-gap-form',
       rules: [
         "One member is given a keyword, and they must explain it without saying the word itself.",
         "The other member must guess the correct word.",
@@ -152,6 +159,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Sruthika S - 9345037764 , Karthiks Selva S - 8122289816  ',
+      formLink: 'https://forms.gle/debate-form',
       rules: [
         "Topics will be given on the spot or 15 minutes prior.",
         "Each participant must present arguments for or against the topic.",
@@ -171,6 +179,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Varshini P - 6379746271, Brindha - 9884593135',
+      formLink: 'https://forms.gle/portrait-painting-form',
       rules: [
         "Participants must bring their own materials (canvas, paints, brushes).",
         "No digital art or tracing allowed.",
@@ -190,6 +199,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Mahesh - 6370079304 ,Manikandan - 8754295217 ',
+      formLink: 'https://forms.gle/anime-quiz-form',
       rules: [
         "Only one answer per team per question.",
         "No use of mobile phones or internet help.",
@@ -208,6 +218,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Vineeth Kumar G - 9345823899, Ganesh - 9025289971  ',
+      formLink: 'https://forms.gle/ipl-auction-form',
       rules: [
         "Each team gets a virtual budget to bid for players.",
         "Player values are pre-determined based on real IPL stats.",
@@ -227,6 +238,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Gayathri - 9363111299,Mohana Prabha K - 8610280153',
+      formLink: 'https://forms.gle/mehendi-form',
       rules: [
         "Participants must bring their own materials (Mehendi cones, colors, etc.).",
         "Designs must be original (no printed references).",
@@ -248,6 +260,7 @@ const eventsData = {
       venue: 'Auditorium, Meenakshi College of Engineering',
       team: 'Solo or Duet',
       contact: 'induja- 9939295783 , shaisree- 9597104899',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Participants must dance to random music played by organizers.",
         "No prior knowledge of the songs.",
@@ -267,6 +280,7 @@ const eventsData = {
       venue: 'Auditorium, Meenakshi College of Engineering',
       team: 'Solo or Duet',
       contact: 'Divya - 6379476055, Saalini-8681976176',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Participants can sing with or without background music (karaoke allowed).",
         "No auto-tune or pre-recorded vocals.",
@@ -286,6 +300,7 @@ const eventsData = {
       venue: 'Auditorium, Meenakshi College of Engineering',
       team: 'Solo or Duet',
       contact: 'Maha-9384617261 , Kanishka-7010768145',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Participants must bring their own music track (submit before the event).",
         "Any dance form is allowed (solo/group).",
@@ -306,6 +321,7 @@ const eventsData = {
       venue: 'Auditorium, Meenakshi College of Engineering',
       team: '3-6',
       contact: 'Brindha - 9884593135, Janasri-814857782',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "No dialogues or vocal sounds (only expressions & gestures).",
         "Use of props is allowed but should not distract from the act.",
@@ -325,6 +341,7 @@ const eventsData = {
       venue: 'Auditorium, Meenakshi College of Engineering',
       team: 'solo',
       contact: 'Jayaprakash- 9940343030 , Allan-6374481043',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Participants must wear appropriate attire (shorts/tank tops).",
         "No external assistance (supplements, oils, etc.).",
@@ -343,6 +360,7 @@ const eventsData = {
       venue: 'Auditorium, Meenakshi College of Engineering',
       team: '5 - 10',
       contact: 'Keerthana-9566226865,parvathi-8428200539',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Themes will be provided or teams can choose their own.",
         "No inappropriate outfits or offensive gestures.",
@@ -364,6 +382,7 @@ const eventsData = {
       venue: 'TURF',
       team: 'Teams of 7',
       contact: 'Inbathamizhan +91 90808 83580,Jared Benson.S-9566079126',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "5+2 players",
         "No offside rule.",
@@ -384,6 +403,7 @@ const eventsData = {
       venue: 'Sports Ground, Meenakshi College of Engineering',
       team: 'solo',
       contact: 'Harish D 7358-591836,BHAGAVATHI GANESH ES 9025298871',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Standard badminton rules apply.",
         "Players must bring their own racquets; shuttlecock will be provided.",
@@ -402,6 +422,7 @@ const eventsData = {
       venue: '2nd Floor- Gym',
       team: 'solo',
       contact: 'Srijith Kumar R- 80561 46992,Abinaya D - 89253 01438',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Standard carrom board rules apply.",
         "No external powder allowed.",
@@ -420,6 +441,7 @@ const eventsData = {
       venue: '2nd Floor- Gym',
       team: 'Solo',
       contact: 'Siva sankari - 73587 82004',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Standard FIDE chess rules apply.",
         "Players must not use external help (e.g., mobile phones).",
@@ -438,6 +460,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 6',
       contact: 'Yuvaraj 73052 96377 , Durai Pandiyan 9025258855 ',
+      formLink: 'https://forms.gle/adaptune-form',
       isEsports: true,
       rules: [
         "Standard Free Fire tournament rules apply.",
@@ -457,6 +480,7 @@ const eventsData = {
       venue: '2nd Floor- Gym',
       team: 'Teams of 6',
       contact: 'Charles Prabakaran - 8056044498, Sanjay Kumar E- 6382369043',
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Participants must complete challenges in the given time.",
         "Judges will assess form, stamina, and completion.",
@@ -476,6 +500,7 @@ const eventsData = {
       team: 'Teams of 6',
       contact: 'Asarudeen.A- 84283 87745 , Arun P.A 90252 58855',
       isEsports: true,
+      formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Standard BGMI tournament rules apply.",
         "No use of third-party software or cheats.",
