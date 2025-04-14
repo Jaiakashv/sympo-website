@@ -12,7 +12,7 @@ const eventsData = {
       host: 'Nikhil Srinivasan S,S.Sooriya',
       date: 'April 25, 2025',
       time: '9:00 AM - 12:00 PM',
-      venue: 'Main Auditorium, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: '1-4 members',
       contact: 'nikhil-6369510662, s.sooriya-9176313108',
       rules: [
@@ -31,7 +31,7 @@ const eventsData = {
       host: 'Preetha P , Sree Nandhine N',
       date: 'April 25, 2025',
       time: '9:00 AM - 11:00 PM',
-      venue: 'Main Auditorium, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: '1-3 members',
       contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
       rules: [
@@ -50,7 +50,7 @@ const eventsData = {
       host: 'Ravi Vishnu D , Jaiakash V ',
       date: 'April 25, 2025',
       time: '9:00 AM - 12:30 PM',
-      venue: 'Main Auditorium, Meenakshi College of Engineering',
+      venue: 'CSE LAB',
       team: '2-3 members',
       contact: 'Ravi Vishnu -7305651782 ,Jaiakash V- 8122535240',
       rules: [
@@ -71,7 +71,7 @@ const eventsData = {
       host: 'Lalitha Lochana G ,Kamala Sruthi M ',
       date: 'April 25, 2025',
       time: '10:00 AM - 12:00 PM',
-      venue: 'Main Auditorium, Meenakshi College of Engineering',
+      venue: 'CSE LAB',
       team: '1-2 members',
       contact: 'Lalitha Lochana G – 6382420560 ,Kamala Sruthi M - 9499979590',
       rules: [
@@ -111,7 +111,7 @@ const eventsData = {
       host: 'Sanjai S , Naveena D',
       date: 'April 26, 2025',
       time: '11:00 AM - 1:00 PM',
-      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Sanjai S - 9345524166 ,Naveena D - 6385270719 ',
       rules: [
@@ -130,7 +130,7 @@ const eventsData = {
       host: 'Durga Deeksha S , Sree Nandhini N',
       date: 'April 26, 2025',
       time: '11:00 AM - 1:00 PM',
-      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Durga Deeksha S-9080690564 , Sree Nandhini N -9025645542',
       rules: [
@@ -149,7 +149,7 @@ const eventsData = {
       host: 'Sruthika S , Karthiks Selva',
       date: 'April 26, 2025',
       time: '11:00 AM - 1:00 PM',
-      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Sruthika S - 9345037764 , Karthiks Selva S - 8122289816  ',
       rules: [
@@ -168,7 +168,7 @@ const eventsData = {
       host: 'Varshini P , Brindha',
       date: 'April 26, 2025',
       time: '11:00 AM - 1:00 PM',
-      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Varshini P - 6379746271, Brindha - 9884593135',
       rules: [
@@ -187,7 +187,7 @@ const eventsData = {
       host: 'Mahesh, Manikandan',
       date: 'April 26, 2025',
       time: '11:00 AM - 1:00 PM',
-      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Mahesh - 6370079304 ,Manikandan - 8754295217 ',
       rules: [
@@ -205,7 +205,7 @@ const eventsData = {
       host: 'Vineeth Kumar G ,Ganesh',
       date: 'April 26, 2025',
       time: '11:00 AM - 1:00 PM',
-      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Vineeth Kumar G - 9345823899, Ganesh - 9025289971  ',
       rules: [
@@ -224,7 +224,7 @@ const eventsData = {
       host: 'Gayathri , Mohana Prabha K',
       date: 'April 26, 2025',
       time: '11:00 AM - 1:00 PM',
-      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Gayathri - 9363111299,Mohana Prabha K - 8610280153',
       rules: [
@@ -361,7 +361,7 @@ const eventsData = {
       host: 'Inbathamizhan,Jared Benson.S',
       date: 'April 25,2025',
       time: '8:00 AM - 2:00 PM',
-      venue: 'Sports Ground, Meenakshi College of Engineering',
+      venue: 'TURF',
       team: 'Teams of 7',
       contact: 'Inbathamizhan +91 90808 83580,Jared Benson.S-9566079126',
       rules: [
@@ -399,7 +399,7 @@ const eventsData = {
       host: 'Srijith Kumar R , Abinaya D',
       date: 'April 25,2025',
       time: '8:00 AM - 2:00 PM',
-      venue: 'Sports Ground, Meenakshi College of Engineering',
+      venue: '2nd Floor- Gym',
       team: 'solo',
       contact: 'Srijith Kumar R- 80561 46992,Abinaya D - 89253 01438',
       rules: [
@@ -417,7 +417,7 @@ const eventsData = {
       host: 'Siva sankari',
       date: 'April 25,2025',
       time: '8:00 AM - 2:00 PM',
-      venue: 'Sports Ground, Meenakshi College of Engineering',
+      venue: '2nd Floor- Gym',
       team: 'Solo',
       contact: 'Siva sankari - 73587 82004',
       rules: [
@@ -435,7 +435,7 @@ const eventsData = {
       host: 'Yuvaraj , Durai Pandiyan',
       date: 'April 25,2025',
       time: '10:00 AM - 12:00 PM',
-      venue: 'Sports Ground, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 6',
       contact: 'Yuvaraj 73052 96377 , Durai Pandiyan 9025258855 ',
       isEsports: true,
@@ -454,7 +454,7 @@ const eventsData = {
       host: 'Charles Prabakaran , Sanjay Kumar E ',
       date: 'April 25,2025',
       time: '8:00 AM - 2:00 PM',
-      venue: 'Sports Ground, Meenakshi College of Engineering',
+      venue: '2nd Floor- Gym',
       team: 'Teams of 6',
       contact: 'Charles Prabakaran - 8056044498, Sanjay Kumar E- 6382369043',
       rules: [
@@ -472,7 +472,7 @@ const eventsData = {
       host: 'Asarudeen.A ,Arun P.A ',
       date: 'April 25,2025',
       time: '10:00 AM - 12:00 PM',
-      venue: 'Sports Ground, Meenakshi College of Engineering',
+      venue: 'TBD',
       team: 'Teams of 6',
       contact: 'Asarudeen.A- 84283 87745 , Arun P.A 90252 58855',
       isEsports: true,
