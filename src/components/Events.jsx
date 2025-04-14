@@ -9,17 +9,16 @@ const eventsData = {
       type: 'Competition',
       image: '/event-images/paper-presentation.jpg',
       description: 'Present your research papers on innovative tech solutions and emerging technologies in specialized studies.',
-      host: 'Nikhil Srinivasan S,Sanjana V',
-      date: 'May 15, 2025',
+      host: 'Nikhil Srinivasan S,S.Sooriya',
+      date: 'April 25, 2025',
       time: '10:00 AM - 4:00 PM',
       venue: 'Main Auditorium, Meenakshi College of Engineering',
       team: '1-2 members',
-      contact: 'nikhil-6369510662, sanjana V-9940448141',
+      contact: 'nikhil-6369510662, s.sooriya-9176313108',
       rules: [
-        "Paper must follow IEEE/APA format.",
         "Content should be original (plagiarism < 20%).",
         "Max 10-12 slides allowed.",
-        "Participants must submit papers before the deadline.",
+        "Participants must submit PPT before the deadline.",
         "Judges' decisions are final."
       ],
       prizes: ['First Prize', 'Second Prize']
@@ -29,12 +28,12 @@ const eventsData = {
       type: 'Quiz',
       image: '/event-images/tech-quiz.jpg',
       description: 'Test your technical knowledge and problem-solving skills in this fast-paced quiz covering various engineering topics.',
-      host: 'Neha R , Shalini B',
-      date: 'May 15, 2025',
+      host: 'Preetha P , Sree Nandhine N',
+      date: 'April 25, 2025',
       time: '10:00 AM - 4:00 PM',
       venue: 'Main Auditorium, Meenakshi College of Engineering',
       team: '1-2 members',
-      contact: 'neha-9884373131, shalini-8072196018',
+      contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
       rules: [
         "Each question has a time limit.",
         "No use of mobile phones or external help.",
@@ -48,15 +47,15 @@ const eventsData = {
       type: 'Competition',
       image: '/event-images/hack.jpg',
       description: 'A 6-hour coding marathon to develop innovative solutions for complex challenges and technological problems.',
-      host: 'Ravi Vishnu D , Axin Ricco R ',
-      date: 'May 15, 2025',
+      host: 'Ravi Vishnu D , Jaiakash V ',
+      date: 'April 25, 2025',
       time: '10:00 AM - 4:00 PM',
       venue: 'Main Auditorium, Meenakshi College of Engineering',
       team: '1-2 members',
-      contact: 'Ravi Vishnu -7305651782 , Axin Ricco R – 7305539655',
+      contact: 'Ravi Vishnu -7305651782 ,Jaiakash V- 8122535240',
       rules: [
         "Teams must develop a solution based on the given problem statement.",
-        "Allowed languages: Python, Java, C++, etc.",
+        "Allowed languages: Python, Java, C++,React etc.",
         "Submission via GitHub link or file upload.",
         "Judges evaluate based on code efficiency, correctness, and innovation.",
         "No plagiarism—only original work is accepted."
@@ -69,19 +68,19 @@ const eventsData = {
       type: 'competition',
       image: '/event-images/ui-ux.jpg',
       description: 'Create intuitive interfaces and experiences for various applications and management systems.',
-      host: 'Lalitha Lochana G ,Seethaladevi S R ',
-      date: 'May 15, 2025',
+      host: 'Lalitha Lochana G ,Kamala Sruthi M ',
+      date: 'April 25, 2025',
       time: '10:00 AM - 4:00 PM',
       venue: 'Main Auditorium, Meenakshi College of Engineering',
       team: '1-2 members',
-      contact: 'Lalitha Lochana G – 6382420560 , Seethaladevi S R – 6369567195',
+      contact: 'Lalitha Lochana G – 6382420560 ,Kamala Sruthi M - 9499979590',
       rules: [
         "Participants must design a UI/UX prototype for a given problem statement.",
         "Allowed tools: Figma, Adobe XD, Canva, or any other design software.",
         "Judging criteria: Creativity, usability, responsiveness, and innovation.",
         "Submission should include wireframes and final designs."
       ],
-      prizes: ['Best Design Award', 'Design Tool Subscription']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Debugging',
@@ -89,7 +88,7 @@ const eventsData = {
       image: '/event-images/debug.jpg',
       description: 'Solve complex coding problems and showcase your programming skills.',
       host: 'Yuva Shree B ,Thirumagal S ',
-      date: 'June 10, 2025',
+      date: 'April 25, 2025',
       time: '9:00 AM - 3:00 PM',
       venue: 'Computer Lab, Meenakshi College of Engineering',
       team: 'Individual',
@@ -100,7 +99,7 @@ const eventsData = {
         "No use of AI tools or online compilers.",
         "Scoring based on correctness, efficiency, and time taken."
       ],
-      prizes: ['Gold Medal', 'Silver Medal', 'Bronze Medal']
+      prizes: ['First Prize', 'Second Prize']
     }
   ],
   nonTechnical: [
@@ -109,102 +108,132 @@ const eventsData = {
       type: 'Quiz',
       image: '/event-images/cinematic-quiz.jpg',
       description: 'Test your knowledge of movies, TV shows, and cinematic lore in this exciting film-themed quiz competition.',
-      host: 'Jane Smith',
-      date: 'July 5, 2025',
+      host: 'Sanjai S , Naveena D',
+      date: 'April 26, 2025',
       time: '11:00 AM - 1:00 PM',
       venue: 'Lecture Hall 1, Meenakshi College of Engineering',
       team: 'Teams of 2',
-      contact: 'cinematic.quiz@mirai-enzan.com',
+      contact: 'Sanjai S - 9345524166 ,Naveena D - 6385270719 ',
       rules: [
         "Only one answer per team per question.",
         "No use of mobile phones or external help.",
         "Negative marking for wrong answers (if applicable).",
         "Judges' decision is final."
       ],
-      prizes: ['Movie Tickets', 'Gift Vouchers']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Bridge the Gap',
       type: 'Team Event',
       image: '/event-images/bridge.jpg',
       description: 'A team-building event where participants collaborate to solve problems and bridge communication gaps effectively.',
-      host: 'Mediator Harmony',
+      host: 'Durga Deeksha S , Sree Nandhini N',
+      date: 'April 26, 2025',
+      time: '11:00 AM - 1:00 PM',
+      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      team: 'Teams of 2',
+      contact: 'Durga Deeksha S-9080690564 , Sree Nandhini N -9025645542',
       rules: [
         "One member is given a keyword, and they must explain it without saying the word itself.",
         "The other member must guess the correct word.",
         "No hand gestures or spelling out words.",
         "Teams with the highest correct guesses win."
       ],
-      prizes: ['Team Synergy Award', 'Best Communicator Prize']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Debate',
       type: 'Competition',
       image: '/event-images/debate.jpg',
       description: 'Engage in stimulating debates on contemporary topics, showcasing your persuasive skills and critical thinking.',
-      host: 'Grand Orator',
+      host: 'Sruthika S , Karthiks Selva',
+      date: 'April 26, 2025',
+      time: '11:00 AM - 1:00 PM',
+      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      team: 'Teams of 2',
+      contact: 'Sruthika S - 9345037764 , Karthiks Selva S - 8122289816  ',
       rules: [
         "Topics will be given on the spot or 15 minutes prior.",
         "Each participant must present arguments for or against the topic.",
         "Personal attacks or offensive language will lead to disqualification.",
         "Judges evaluate based on clarity, logic, and delivery."
       ],
-      prizes: ['Best Debater', 'Most Persuasive Speaker']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Portrait Painting',
       type: 'Art Competition',
       image: '/event-images/paint.jpg',
       description: 'Express your artistic talents by painting portraits of legendary figures and their companions using various media and techniques.',
-      host: 'Master Artist',
+      host: 'Varshini P , Brindha',
+      date: 'April 26, 2025',
+      time: '11:00 AM - 1:00 PM',
+      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      team: 'Teams of 2',
+      contact: 'Varshini P - 6379746271, Brindha - 9884593135',
       rules: [
         "Participants must bring their own materials (canvas, paints, brushes).",
         "No digital art or tracing allowed.",
         "Judging criteria: Creativity, detailing, and resemblance.",
         "No external references or printed images allowed."
       ],
-      prizes: ['Best Portrait', 'Most Creative Artist']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'Anime Quiz',
       type: 'Competition',
       image: '/event-images/anime.jpg',
       description: 'Challenge your knowledge of themed anime, characters, and storytelling traditions from Eastern and Western animation.',
-      host: 'Anime Scholar',
+      host: 'Mahesh, Manikandan',
+      date: 'April 26, 2025',
+      time: '11:00 AM - 1:00 PM',
+      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      team: 'Teams of 2',
+      contact: 'Mahesh - 6370079304 ,Manikandan - 8754295217 ',
       rules: [
         "Only one answer per team per question.",
         "No use of mobile phones or internet help.",
         "Judges' decision is final."
       ],
-      prizes: ['Top Anime Fan Trophy', 'Manga Collection']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
       name: 'IPL Mock Auction',
       type: 'Simulation',
       image: '/event-images/ipl.jpg',
       description: 'Participate in a simulated team auction, building the ultimate squad while managing your resources and strategy.',
-      host: 'Auction Master',
+      host: 'Vineeth Kumar G ,Ganesh',
+      date: 'April 26, 2025',
+      time: '11:00 AM - 1:00 PM',
+      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      team: 'Teams of 2',
+      contact: 'Vineeth Kumar G - 9345823899, Ganesh - 9025289971  ',
       rules: [
         "Each team gets a virtual budget to bid for players.",
         "Player values are pre-determined based on real IPL stats.",
         "The team with the most balanced squad based on strategy wins.",
         "No unfair bidding (e.g., blocking other teams intentionally)."
       ],
-      prizes: ['Master Strategist Award', 'Best Team Composition']
+      prizes: ['First Prize', 'Second Prize']
     },
     {
-      name: 'Rangoli/Mehendi',
+      name: 'Mehendi',
       type: 'Art Competition',
       image: '/event-images/rangoli.jpg',
       description: 'Create beautiful traditional designs inspired by cultural motifs, using colored powders for Rangoli or henna for Mehendi art.',
-      host: 'Art Curator',
+      host: 'Gayathri , Mohana Prabha K',
+      date: 'April 26, 2025',
+      time: '11:00 AM - 1:00 PM',
+      venue: 'Lecture Hall 1, Meenakshi College of Engineering',
+      team: 'Teams of 2',
+      contact: 'Gayathri - 9363111299,Mohana Prabha K - 8610280153',
       rules: [
         "Participants must bring their own materials (Mehendi cones, colors, etc.).",
         "Designs must be original (no printed references).",
         "Judging criteria: Creativity, neatness, and complexity.",
         "No external assistance is allowed."
       ],
-      prizes: ['Best Traditional Design', 'Artistic Excellence Award']
+      prizes: ['First Prize', 'Second Prize']
     }
   ],
   culturals: [
@@ -214,7 +243,7 @@ const eventsData = {
       image: '/event-images/adaptune.jpg',
       description: 'Showcase your musical talent in this exciting competition.',
       host: 'Emily Johnson',
-      date: 'August 20, 2025',
+      date: 'April 26, 2025',
       time: '2:00 PM - 5:00 PM',
       venue: 'Auditorium, Meenakshi College of Engineering',
       team: 'Solo or Duet',
@@ -233,6 +262,11 @@ const eventsData = {
       image: '/event-images/sing.jpg',
       description: 'Showcase your vocal talents with themed songs, ranging from powerful ballads to contemporary pieces.',
       host: 'Vocal Master',
+      date: 'April 26, 2025',
+      time: '2:00 PM - 5:00 PM',
+      venue: 'Auditorium, Meenakshi College of Engineering',
+      team: 'Solo or Duet',
+      contact: 'adaptune@mirai-enzan.com',
       rules: [
         "Participants can sing with or without background music (karaoke allowed).",
         "No auto-tune or pre-recorded vocals.",
@@ -247,6 +281,11 @@ const eventsData = {
       image: '/event-images/dance.jpg',
       description: 'Express the grace and power of dragons through choreographed dance performances, either solo or in groups.',
       host: 'Dance Director Gracewing',
+      date: 'April 26, 2025',
+      time: '2:00 PM - 5:00 PM',
+      venue: 'Auditorium, Meenakshi College of Engineering',
+      team: 'Solo or Duet',
+      contact: 'adaptune@mirai-enzan.com',
       rules: [
         "Participants must bring their own music track (submit before the event).",
         "Any dance form is allowed (solo/group).",
@@ -262,6 +301,11 @@ const eventsData = {
       image: '/event-images/mime.jpg',
       description: 'Tell compelling stories through the art of silent expression, using only gestures and body movements.',
       host: 'Mime Artist',
+      date: 'April 26, 2025',
+      time: '2:00 PM - 5:00 PM',
+      venue: 'Auditorium, Meenakshi College of Engineering',
+      team: 'Solo or Duet',
+      contact: 'adaptune@mirai-enzan.com',
       rules: [
         "No dialogues or vocal sounds (only expressions & gestures).",
         "Use of props is allowed but should not distract from the act.",
@@ -276,6 +320,11 @@ const eventsData = {
       image: '/event-images/body-build.jpg',
       description: 'Demonstrate strength and physical discipline in this demanding fitness competition.',
       host: 'Strength Coach',
+      date: 'April 26, 2025',
+      time: '2:00 PM - 5:00 PM',
+      venue: 'Auditorium, Meenakshi College of Engineering',
+      team: 'Solo or Duet',
+      contact: 'adaptune@mirai-enzan.com',
       rules: [
         "Participants must wear appropriate attire (shorts/tank tops).",
         "No external assistance (supplements, oils, etc.).",
@@ -289,6 +338,11 @@ const eventsData = {
       image: '/event-images/fashion.jpg',
       description: 'Showcase themed fashion designs, from wearable art to costume creations that embody elegance and creativity.',
       host: 'Fashion Designer',
+      date: 'April 26, 2025',
+      time: '2:00 PM - 5:00 PM',
+      venue: 'Auditorium, Meenakshi College of Engineering',
+      team: 'Solo or Duet',
+      contact: 'adaptune@mirai-enzan.com',
       rules: [
         "Themes will be provided or teams can choose their own.",
         "No inappropriate outfits or offensive gestures.",
@@ -305,7 +359,7 @@ const eventsData = {
       image: '/event-images/football.jpg',
       description: 'Battle it out on the field in this exciting football tournament featuring tactical gameplay and team coordination.',
       host: 'Inbathamizhan,Jared Benson.S',
-      date: 'September 15, 2025',
+      date: 'April 25,2025',
       time: '10:00 AM - 6:00 PM',
       venue: 'Sports Ground, Meenakshi College of Engineering',
       team: 'Teams of 6',
@@ -324,7 +378,7 @@ const eventsData = {
       image: '/event-images/badminton.jpg',
       description: 'Showcase your agility and precision in singles and doubles badminton matches for both boys and girls.',
       host: 'Harish D,BHAGAVATHI GANESH ES',
-      date: 'September 15, 2025',
+      date: 'April 25,2025',
       time: '10:00 AM - 6:00 PM',
       venue: 'Sports Ground, Meenakshi College of Engineering',
       team: 'Teams of 6',
@@ -342,7 +396,7 @@ const eventsData = {
       image: '/event-images/carrom.jpg',
       description: 'Test your precision and strategy in this tabletop game that combines elements of billiards, shuffleboard and checkers.',
       host: 'Srijith Kumar R , Abinaya D',
-      date: 'September 15, 2025',
+      date: 'April 25,2025',
       time: '10:00 AM - 6:00 PM',
       venue: 'Sports Ground, Meenakshi College of Engineering',
       team: 'Teams of 6',
@@ -360,7 +414,7 @@ const eventsData = {
       image: '/event-images/chess.jpg',
       description: 'Challenge your strategic thinking and foresight in this classic battle of minds on the checkered board.',
       host: 'Siva sankari',
-      date: 'September 15, 2025',
+      date: 'April 25,2025',
       time: '10:00 AM - 6:00 PM',
       venue: 'Sports Ground, Meenakshi College of Engineering',
       team: 'Teams of 6',
@@ -378,7 +432,7 @@ const eventsData = {
       image: '/event-images/ff-max.jpg',
       description: 'Compete in this popular battle royale mobile game tournament, showcasing your survival and combat skills in a premiere Esports competition.',
       host: 'Yuvaraj , Durai Pandiyan',
-      date: 'September 15, 2025',
+      date: 'April 25,2025',
       time: '10:00 AM - 6:00 PM',
       venue: 'Sports Ground, Meenakshi College of Engineering',
       team: 'Teams of 6',
@@ -397,7 +451,7 @@ const eventsData = {
       image: '/event-images/crossfit.jpg',
       description: 'Test your strength, endurance and overall fitness in this high-intensity functional training competition.',
       host: 'Charles Prabakaran , Sanjay Kumar E ',
-      date: 'September 15, 2025',
+      date: 'April 25,2025',
       time: '10:00 AM - 6:00 PM',
       venue: 'Sports Ground, Meenakshi College of Engineering',
       team: 'Teams of 6',
@@ -415,7 +469,7 @@ const eventsData = {
       image: '/event-images/bgmi.jpg',
       description: 'Battle for victory in this tactical mobile shooter game tournament requiring teamwork and strategic thinking. A flagship Esports event for mobile gamers.',
       host: 'Asarudeen.A ,Arun P.A ',
-      date: 'September 15, 2025',
+      date: 'April 25,2025',
       time: '10:00 AM - 6:00 PM',
       venue: 'Sports Ground, Meenakshi College of Engineering',
       team: 'Teams of 6',
