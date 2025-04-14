@@ -4,17 +4,12 @@ import { Clock, MapPin, Calendar } from 'lucide-react';
 const scheduleData = {
   'Day 1 - April 25': [
     {
-      time: '9:00 AM - 10:30 AM',
-      title: 'Opening Ceremony',
-      location: 'Main Hall'
-    },
-    {
-      time: '11:00 Am - 12:00 PM',
+      time: '10:00 Am - 12:00 PM',
       title: 'UI/UX',
       location: 'TBD'
     },
     {
-      time: '9:00 AM - 12:00 PM',
+      time: '9:00 AM - 12:30 PM',
       title: 'Sparkathon',
       location: 'TBD'
     },
@@ -24,12 +19,12 @@ const scheduleData = {
       location: 'TBD'
     },
     {
-      time: '9:00 AM - 1:00 PM',
+      time: '9:00 AM - 11:00 AM',
       title: 'Technical Quiz',
       location: 'TBD'
     },
     {
-      time: '9:00 AM - 1:00 PM',
+      time: '9:00 AM - 12:00 PM',
       title: 'Paper Presentation',
       location: 'TBD'
     },
@@ -54,6 +49,11 @@ const scheduleData = {
   ],
   'Day 2 - April 26': [
     {
+      time: 'Starts at 9:00 AM',
+      title: 'ALL Cultural Events',
+      location: 'Stage'
+    },
+    {
       time: '10:00 AM - 11:00 AM',
       title: 'Cinematic Quiz',
       location: 'TBD'
@@ -71,13 +71,13 @@ const scheduleData = {
     
     
     {
-      time: '1:00 PM - 4:00 PM',
+      time: '11:00 AM - 2:00 PM',
       title: 'IPL Mock Auction',
       location: 'TBD'
     },
     {
       time: '11:00 AM - 12:00 PM',
-      title: 'Rangoli/Mehandi',
+      title: 'Mehandi',
       location: 'TBD'
     },
     {
@@ -85,7 +85,11 @@ const scheduleData = {
       title: 'Portrait Painting',
       location: 'TBD'
     },
-    
+    {
+      time: '10:00 AM - 11:30 PM',
+      title: 'Bridge the gap',
+      location: 'TBD'
+    }, 
   ]
 };
 
