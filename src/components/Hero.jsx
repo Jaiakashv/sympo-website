@@ -81,7 +81,7 @@ const Hero = () => {
         <div className="flex flex-col items-center text-center">
           <div className="flex flex-col sm:flex-row items-center gap-4 mb-2">
             <img 
-              src="/lovable-uploads/mce-logo.png" 
+              src="/lovable-uploads/mce-log.png" 
               alt="" 
               className="w-23 h-23 sm:w-15 sm:h-15"
             />
