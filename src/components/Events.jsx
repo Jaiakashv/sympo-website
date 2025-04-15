@@ -17,6 +17,7 @@ const eventsData = {
       contact: 'nikhil-6369510662, s.sooriya-9176313108',
       formLink: '',
       rules: [
+        "College Id Card is Mandatory",
         "Content should be original (plagiarism < 20%).",
         "Max 7-8 slides allowed.",
         "Participants must submit PPT before the deadline.",
@@ -37,6 +38,7 @@ const eventsData = {
       contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
       formLink: '',
       rules: [
+        "College Id Card is Mandatory",
         "Each question has a time limit.",
         "No use of mobile phones or external help.",
         "Negative marking for wrong answers (if applicable).",
@@ -57,6 +59,7 @@ const eventsData = {
       contact: 'Ravi Vishnu -7305651782 ,Jaiakash V- 8122535240',
       formLink: 'https://forms.gle/sparkathon-form',
       rules: [
+        "College Id Card is Mandatory",
         "Teams must develop a solution based on the given problem statement.",
         "Allowed languages: Python, Java, C++,React etc.",
         "Submission via GitHub link or file upload.",
@@ -79,6 +82,7 @@ const eventsData = {
       contact: 'Lalitha Lochana G – 6382420560 ,Kamala Sruthi M - 9499979590',
       formLink: 'https://forms.gle/uiux-form',
       rules: [
+        "College Id Card is Mandatory",
         "Participants must design a UI/UX prototype for a given problem statement.",
         "Allowed tools: Figma, Adobe XD, Canva, or any other design software.",
         "Judging criteria: Creativity, usability, responsiveness, and innovation.",
@@ -99,6 +103,7 @@ const eventsData = {
       contact: 'Yuva Shree B – 6382141895 , Thirumagal S – 9841888837',
       formLink: 'https://forms.gle/debugging-form',
       rules: [
+        "College Id Card is Mandatory",
         "Participants will be given buggy code and must debug it within the time limit.",
         "Allowed languages: C, C++, Java, Python.",
         "No use of AI tools or online compilers.",
@@ -121,6 +126,7 @@ const eventsData = {
       contact: 'Sanjai S - 9345524166 ,Naveena D - 6385270719 ',
       formLink: 'https://forms.gle/cinematic-quiz-form',
       rules: [
+        "College Id Card is Mandatory",
         "Only one answer per team per question.",
         "No use of mobile phones or external help.",
         "Negative marking for wrong answers (if applicable).",
@@ -141,6 +147,7 @@ const eventsData = {
       contact: 'Durga Deeksha S-9080690564 , Sree Nandhini N -9025645542',
       formLink: 'https://forms.gle/bridge-gap-form',
       rules: [
+        "College Id Card is Mandatory",
         "One member is given a keyword, and they must explain it without saying the word itself.",
         "The other member must guess the correct word.",
         "No hand gestures or spelling out words.",
@@ -161,6 +168,7 @@ const eventsData = {
       contact: 'Sruthika S - 9345037764 , Karthiks Selva S - 8122289816  ',
       formLink: 'https://forms.gle/debate-form',
       rules: [
+        "College Id Card is Mandatory",
         "Topics will be given on the spot or 15 minutes prior.",
         "Each participant must present arguments for or against the topic.",
         "Personal attacks or offensive language will lead to disqualification.",
@@ -181,6 +189,7 @@ const eventsData = {
       contact: 'Varshini P - 6379746271, Brindha - 9884593135',
       formLink: 'https://forms.gle/portrait-painting-form',
       rules: [
+        "College Id Card is Mandatory",
         "Participants must bring their own materials (canvas, paints, brushes).",
         "No digital art or tracing allowed.",
         "Judging criteria: Creativity, detailing, and resemblance.",
@@ -201,6 +210,7 @@ const eventsData = {
       contact: 'Mahesh - 6370079304 ,Manikandan - 8754295217 ',
       formLink: 'https://forms.gle/anime-quiz-form',
       rules: [
+        "College Id Card is Mandatory",
         "Only one answer per team per question.",
         "No use of mobile phones or internet help.",
         "Judges' decision is final."
@@ -220,6 +230,7 @@ const eventsData = {
       contact: 'Vineeth Kumar G - 9345823899, Ganesh - 9025289971  ',
       formLink: 'https://forms.gle/ipl-auction-form',
       rules: [
+        "College Id Card is Mandatory",
         "Each team gets a virtual budget to bid for players.",
         "Player values are pre-determined based on real IPL stats.",
         "The team with the most balanced squad based on strategy wins.",
@@ -240,6 +251,7 @@ const eventsData = {
       contact: 'Gayathri - 9363111299,Mohana Prabha K - 8610280153',
       formLink: 'https://forms.gle/mehendi-form',
       rules: [
+        "College Id Card is Mandatory",
         "Participants must bring their own materials (Mehendi cones, colors, etc.).",
         "Designs must be original (no printed references).",
         "Judging criteria: Creativity, neatness, and complexity.",
@@ -304,6 +316,7 @@ const eventsData = {
       contact: 'induja- 9939295783 , shaisree- 9597104899',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "College Id Card is Mandatory",
         "Participants must dance to random music played by organizers.",
         "No prior knowledge of the songs.",
         "Dance style should match the rhythm of the song.",
@@ -324,6 +337,7 @@ const eventsData = {
       contact: 'Divya - 6379476055, Saalini-8681976176',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "College Id Card is Mandatory",
         "Participants can sing with or without background music (karaoke allowed).",
         "No auto-tune or pre-recorded vocals.",
         "Lyrics should be appropriate (no offensive words).",
@@ -344,6 +358,7 @@ const eventsData = {
       contact: 'Maha-9384617261 , Kanishka-7010768145',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "College Id Card is Mandatory",
         "Participants must bring their own music track (submit before the event).",
         "Any dance form is allowed (solo/group).",
         "No explicit lyrics or inappropriate moves.",
@@ -365,6 +380,7 @@ const eventsData = {
       contact: 'Brindha - 9884593135, Janasri-814857782',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "College Id Card is Mandatory",
         "No dialogues or vocal sounds (only expressions & gestures).",
         "Use of props is allowed but should not distract from the act.",
         "Performances should be creative, meaningful, and engaging.",
@@ -385,6 +401,7 @@ const eventsData = {
       contact: 'Jayaprakash- 9940343030 , Allan-6374481043',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "College Id Card is Mandatory",
         "Participants must wear appropriate attire (shorts/tank tops).",
         "Judging criteria: Muscle definition, symmetry, and strength endurance.",
         "posing is important",
@@ -407,6 +424,7 @@ const eventsData = {
       contact: 'Inbathamizhan +91 90808 83580,Jared Benson.S-9566079126',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "bonafide certificate is Mandatory",
         "5+2 players",
         "No offside rule.",
         "Rolling substitutions allowed.",
@@ -428,6 +446,7 @@ const eventsData = {
       contact: 'Harish D 7358-591836,BHAGAVATHI GANESH ES 9025298871',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "bonafide certificate is Mandatory",
         "Standard badminton rules apply.",
         "Players must bring their own racquets; shuttlecock will be provided.",
         "Umpire's decision is final."
@@ -447,6 +466,7 @@ const eventsData = {
       contact: 'Srijith Kumar R- 80561 46992,Abinaya D - 89253 01438',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "bonafide certificate is Mandatory",
         "Standard carrom board rules apply.",
         "No external powder allowed.",
         "Referee's decision is final."
@@ -466,6 +486,7 @@ const eventsData = {
       contact: 'Siva sankari - 73587 82004',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "bonafide certificate is Mandatory",
         "Standard FIDE chess rules apply.",
         "Players must not use external help (e.g., mobile phones).",
         "Arbiter's decision is final."
@@ -545,6 +566,7 @@ const eventsData = {
       contact: '',
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
+        "bonafide certificate is Mandatory",
         "Participants must complete challenges in the given time.",
         "Judges will assess form, stamina, and completion.",
         "Any misconduct or failure to complete tasks = disqualification."
