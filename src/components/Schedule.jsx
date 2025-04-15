@@ -6,47 +6,47 @@ const scheduleData = {
     {
       time: '10:00 Am - 12:00 PM',
       title: 'UI/UX',
-      location: 'TBD'
+      location: 'CSE LAB (5TH Floor)'
     },
     {
       time: '10:00 Am - 1:00 PM',
       title: 'Workshops',
-      location: 'CSE Lab'
+      location: 'CSE Lab (5TH Floor)'
     },
     {
       time: '9:00 AM - 12:30 PM',
       title: 'Sparkathon',
-      location: 'TBD'
+      location: 'CSE Lab (5TH Floor)'
     },
     {
       time: '9:00 AM - 1:00 PM',
       title: 'Debugging',
-      location: 'TBD'
+      location: '5th floor-511'
     },
     {
       time: '9:00 AM - 11:00 AM',
       title: 'Technical Quiz',
-      location: 'TBD'
+      location: '5th floor-510'
     },
     {
       time: '9:00 AM - 12:00 PM',
       title: 'Paper Presentation',
-      location: 'TBD'
+      location: 'CSE Lab (5TH Floor)'
     },
     {
       time: '8:00 AM - 2:00 PM',
       title: 'sports',
-      location: 'Turf'
+      location: 'Turf & Ground'
     },
     {
       time: '9:00 AM - 12:00 PM',
       title: 'FF-MAX & BGMI',
-      location: 'TBD'
+      location: '5th floor ( 514,515)'
     },
     {
       time: '9:00 AM - 12:00 PM',
       title: 'Chess , Carrom , Cross fit',
-      location: 'Gym Arena- 2nd floor'
+      location: '5th floor-512,513,516'
     },
     
     
@@ -61,12 +61,12 @@ const scheduleData = {
     {
       time: '10:00 AM - 11:00 AM',
       title: 'Cinematic Quiz',
-      location: 'TBD'
+      location: '5th Floor -510'
     },
     {
-      time: '10:00 AM - 11:00 PM',
+      time: '10:00 AM - 12:00 PM',
       title: 'Anime Quiz',
-      location: 'TBD'
+      location: '5th Floor -510'
     },
     {
       time: '11:00 AM - 12:00 PM',
@@ -78,22 +78,22 @@ const scheduleData = {
     {
       time: '9:30 AM - 12:00 PM',
       title: 'IPL Mock Auction',
-      location: 'TBD'
+      location: '5th Floor -514'
     },
     {
       time: '11:00 AM - 12:00 PM',
       title: 'Mehandi',
-      location: 'TBD'
+      location: '5th Floor -512'
     },
     {
       time: '11:00 AM - 12:30 PM',
       title: 'Portrait Painting',
-      location: 'TBD'
+      location: '5th Floor -511'
     },
     {
       time: '10:00 AM - 11:30 PM',
       title: 'Bridge the gap',
-      location: 'TBD'
+      location: '5th Floor -514'
     }, 
   ]
 };
