@@ -230,7 +230,7 @@ const eventsData = {
     {
       name: 'Mehendi',
       type: 'Art Competition',
-      image: '/event-images/rangoli.jpg',
+      image: '/event-images/mehandhi.jpg',
       description: 'Create beautiful traditional designs inspired by cultural motifs, using colored powders for Rangoli or henna for Mehendi art.',
       host: 'Gayathri , Mohana Prabha K',
       date: 'April 26, 2025',
@@ -386,8 +386,9 @@ const eventsData = {
       formLink: 'https://forms.gle/adaptune-form',
       rules: [
         "Participants must wear appropriate attire (shorts/tank tops).",
-        "No external assistance (supplements, oils, etc.).",
-        "Judging criteria: Muscle definition, symmetry, and strength endurance."
+        "Judging criteria: Muscle definition, symmetry, and strength endurance.",
+        "posing is important",
+        "we will not provide any supplement or tan"
       ],
       prizes: ['First Prize', 'Second Prize']
     },
@@ -550,7 +551,26 @@ const eventsData = {
         "Admin decision is final."
       ],
       prizes: ['First Prize', 'Second Prize']
-    }
+    },
+    {
+      name: 'ThrowBall',
+      type: 'Tournament',
+      image: '/event-images/throw.jpg',
+      description: 'Learn the skills and rules of throwball through fun drills, teamwork activities, and matches to boost fitness and coordination.',
+      host: ' ',
+      date: 'April 25,2025',
+      time: '8:00 AM - 2:00 PM',
+      venue: 'Ground',
+      team: 'Teams of 7 + 5 substitute',
+      contact: '',
+      formLink: 'https://forms.gle/adaptune-form',
+      rules: [
+        "Participants must complete challenges in the given time.",
+        "Judges will assess form, stamina, and completion.",
+        "Any misconduct or failure to complete tasks = disqualification."
+      ],
+      prizes: ['First Prize', 'Second Prize']
+    },
   ]
 };
 
@@ -681,7 +701,7 @@ const Events = () => {
             }`}
           >
             <span className="relative z-10 flex items-center">
-              {activeTab === 'workshops' && <Music className="mr-1.5 animate-flame" size={16} />}
+              {activeTab === 'workshops' && <Flame className="mr-1.5 animate-flame" size={16} />}
               Workshops
             </span>
             {activeTab !== 'workshops' && (
