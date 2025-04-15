@@ -15,7 +15,7 @@ const eventsData = {
       venue: 'CSE LAB',
       team: '1-4 members',
       contact: 'nikhil-6369510662, s.sooriya-9176313108',
-      formLink: '',
+      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
       rules: [
         "College Id Card is Mandatory",
         "Content should be original (plagiarism < 20%).",
@@ -36,7 +36,7 @@ const eventsData = {
       venue: '5th Floor Rooom NO:510',
       team: '1-3 members',
       contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
-      formLink: '',
+      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
       rules: [
         "College Id Card is Mandatory",
         "Each question has a time limit.",
@@ -57,7 +57,7 @@ const eventsData = {
       venue: 'CSE LAB',
       team: '2-3 members',
       contact: 'Ravi Vishnu -7305651782 ,Jaiakash V- 8122535240',
-      formLink: 'https://forms.gle/sparkathon-form',
+      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
       rules: [
         "College Id Card is Mandatory",
         "Teams must develop a solution based on the given problem statement.",
@@ -80,7 +80,7 @@ const eventsData = {
       venue: 'CSE LAB',
       team: '1-2 members',
       contact: 'Lalitha Lochana G – 6382420560 ,Kamala Sruthi M - 9499979590',
-      formLink: 'https://forms.gle/uiux-form',
+      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
       rules: [
         "College Id Card is Mandatory",
         "Participants must design a UI/UX prototype for a given problem statement.",
@@ -101,7 +101,7 @@ const eventsData = {
       venue: '5th Floor- 511',
       team: '1-2',
       contact: 'Yuva Shree B – 6382141895 , Thirumagal S – 9841888837',
-      formLink: 'https://forms.gle/debugging-form',
+      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
       rules: [
         "College Id Card is Mandatory",
         "Participants will be given buggy code and must debug it within the time limit.",
@@ -124,7 +124,7 @@ const eventsData = {
       venue: '5th floor - 510',
       team: 'Teams of 2',
       contact: 'Sanjai S - 9345524166 ,Naveena D - 6385270719 ',
-      formLink: 'https://forms.gle/cinematic-quiz-form',
+      formLink: 'https://forms.gle/wipygVN9U1otdZGS7',
       rules: [
         "College Id Card is Mandatory",
         "Only one answer per team per question.",
@@ -145,7 +145,7 @@ const eventsData = {
       venue: '5th floor- 513',
       team: 'Teams of 2',
       contact: 'Durga Deeksha S-9080690564 , Sree Nandhini N -9025645542',
-      formLink: 'https://forms.gle/bridge-gap-form',
+      formLink: 'https://forms.gle/wipygVN9U1otdZGS7',
       rules: [
         "College Id Card is Mandatory",
         "One member is given a keyword, and they must explain it without saying the word itself.",
@@ -166,7 +166,7 @@ const eventsData = {
       venue: 'TBD',
       team: 'Teams of 2',
       contact: 'Sruthika S - 9345037764 , Karthiks Selva S - 8122289816  ',
-      formLink: 'https://forms.gle/debate-form',
+      formLink: 'https://forms.gle/wipygVN9U1otdZGS7',
       rules: [
         "College Id Card is Mandatory",
         "Topics will be given on the spot or 15 minutes prior.",
@@ -187,7 +187,7 @@ const eventsData = {
       venue: '5th floor - 511',
       team: 'Teams of 2',
       contact: 'Varshini P - 6379746271, Brindha - 9884593135',
-      formLink: 'https://forms.gle/portrait-painting-form',
+      formLink: 'https://forms.gle/wipygVN9U1otdZGS7',
       rules: [
         "College Id Card is Mandatory",
         "Participants must bring their own materials (canvas, paints, brushes).",
@@ -208,7 +208,7 @@ const eventsData = {
       venue: '5th floor-510',
       team: 'Teams of 2',
       contact: 'Mahesh - 6370079304 ,Manikandan - 8754295217 ',
-      formLink: 'https://forms.gle/anime-quiz-form',
+      formLink: 'https://forms.gle/wipygVN9U1otdZGS7',
       rules: [
         "College Id Card is Mandatory",
         "Only one answer per team per question.",
@@ -228,7 +228,7 @@ const eventsData = {
       venue: '5th floor-514',
       team: 'Teams of 2',
       contact: 'Vineeth Kumar G - 9345823899, Ganesh - 9025289971  ',
-      formLink: 'https://forms.gle/ipl-auction-form',
+      formLink: 'https://forms.gle/wipygVN9U1otdZGS7',
       rules: [
         "College Id Card is Mandatory",
         "Each team gets a virtual budget to bid for players.",
@@ -249,7 +249,7 @@ const eventsData = {
       venue: '5th floor-512',
       team: 'Teams of 2',
       contact: 'Gayathri - 9363111299,Mohana Prabha K - 8610280153',
-      formLink: 'https://forms.gle/mehendi-form',
+      formLink: 'https://forms.gle/wipygVN9U1otdZGS7',
       rules: [
         "College Id Card is Mandatory",
         "Participants must bring their own materials (Mehendi cones, colors, etc.).",
@@ -314,7 +314,7 @@ const eventsData = {
       venue: 'Stage-vani vidhyalaya',
       team: 'Solo or Duet',
       contact: 'induja- 9939295783 , shaisree- 9597104899',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://forms.gle/pkgjYePv28yNBnqi9',
       rules: [
         "College Id Card is Mandatory",
         "Participants must dance to random music played by organizers.",
@@ -335,7 +335,7 @@ const eventsData = {
       venue: 'Stage-vani vidhyalaya',
       team: 'Solo or Duet',
       contact: 'Divya - 6379476055, Saalini-8681976176',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://forms.gle/pkgjYePv28yNBnqi9',
       rules: [
         "College Id Card is Mandatory",
         "Participants can sing with or without background music (karaoke allowed).",
@@ -356,7 +356,7 @@ const eventsData = {
       venue: 'Stage-vani vidhyalaya',
       team: 'Solo or Duet',
       contact: 'Maha-9384617261 , Kanishka-7010768145',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://forms.gle/pkgjYePv28yNBnqi9',
       rules: [
         "College Id Card is Mandatory",
         "Participants must bring their own music track (submit before the event).",
@@ -378,7 +378,7 @@ const eventsData = {
       venue: 'Stage-vani vidhyalaya',
       team: '3-6',
       contact: 'Brindha - 9884593135, Janasri-814857782',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://forms.gle/pkgjYePv28yNBnqi9',
       rules: [
         "College Id Card is Mandatory",
         "No dialogues or vocal sounds (only expressions & gestures).",
@@ -399,7 +399,7 @@ const eventsData = {
       venue: 'Stage-vani vidhyalaya',
       team: 'solo',
       contact: 'Jayaprakash- 9940343030 , Allan-6374481043',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://forms.gle/pkgjYePv28yNBnqi9',
       rules: [
         "College Id Card is Mandatory",
         "Participants must wear appropriate attire (shorts/tank tops).",
