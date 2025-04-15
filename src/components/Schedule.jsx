@@ -9,6 +9,11 @@ const scheduleData = {
       location: 'TBD'
     },
     {
+      time: '10:00 Am - 1:00 PM',
+      title: 'Workshops',
+      location: 'CSE Lab'
+    },
+    {
       time: '9:00 AM - 12:30 PM',
       title: 'Sparkathon',
       location: 'TBD'
