@@ -509,6 +509,46 @@ const eventsData = {
       ],
       prizes: ['First Prize', 'Second Prize']
     }
+  ],
+  workshops: [
+    {
+      name: 'Flutter Development',
+      type: 'Workshop',
+      image: '/event-images/flutter.png',
+      description: 'Join our Flutter workshop to learn Dart, UI design, Firebase, and build beautiful cross-platform apps with hands-on experience and certification.',
+      host: 'TBD',
+      date: 'April 25, 2025',
+      time: '10:00 AM - 1:00 PM',
+      venue: 'CSE LAB',
+      team: 'Individual',
+      contact: 'TBD',
+      formLink: 'https://forms.gle/web-dev-workshop',
+      rules: [
+        "Participants must bring their own laptops.",
+        "Basic knowledge of programming is recommended.",
+        "Certificate of Completion will be given."
+      ],
+      prizes: ['Certificate of Completion']
+    },
+    {
+      name: 'WebDevelopment With Ai',
+      type: 'Workshop',
+      image: '/event-images/web-ai.png',
+      description: 'Learn modern web development with AI integration. Build smart websites using HTML, CSS, JavaScript, and AI tools for intelligent features',
+      host: 'TBD',
+      date: 'April 25, 2025',
+      time: '10:00 AM - 1:00 PM',
+      venue: 'CSE LAB',
+      team: 'Individual',
+      contact: 'TBD',
+      formLink: 'https://forms.gle/uiux-workshop',
+      rules: [
+        "Participants must bring their own laptops.",
+        "No prior experience required.",
+        "Certificate of Completion will be given."
+      ],
+      prizes: ['Certificate of Completion']
+    }
   ]
 };
 
@@ -660,6 +700,23 @@ const Events = () => {
               Sports
             </span>
             {activeTab !== 'sports' && (
+              <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+            )}
+          </button>
+
+          <button
+            onClick={() => setActiveTab('workshops')}
+            className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full text-xs sm:text-sm md:text-base font-bold transition-all duration-500 relative overflow-hidden group ${
+              activeTab === 'workshops' 
+                ? 'bg-gradient-to-r from-dragon-orange to-dragon-red text-white shadow-lg shadow-dragon-fire/30' 
+                : 'bg-dragon-navy text-dragon-cream/70 hover:text-dragon-cream border border-dragon-fire/30'
+            }`}
+          >
+            <span className="relative z-10 flex items-center">
+              {activeTab === 'workshops' && <Sparkles className="mr-1.5 animate-flame" size={16} />}
+              Workshops
+            </span>
+            {activeTab !== 'workshops' && (
               <span className="absolute inset-0 bg-gradient-to-r from-dragon-orange to-dragon-red opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
             )}
           </button>
