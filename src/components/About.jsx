@@ -72,7 +72,7 @@ const About = () => {
               <div className="relative z-10 p-2 transform rotate-6 hover:rotate-3 transition-transform duration-500 hover-scale">
                 <div className="bg-dragon-navy border-4 border-dragon-fire rounded-lg overflow-hidden shadow-2xl shadow-dragon-fire/20 hover:shadow-dragon-fire/40 transition-all duration-300">
                   <img 
-                    src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb" 
+                    src="/event-images/about-1.png" 
                     alt="Dragon Artwork" 
                     className="w-full h-auto rounded-lg transform transition-transform hover:scale-105 duration-500"
                   />
@@ -82,7 +82,7 @@ const About = () => {
               <div className="absolute bottom-4 right-4 z-20 transform -rotate-3 hover:rotate-0 transition-transform duration-500 hover-scale hidden sm:block">
                 <div className="bg-dragon-navy border-4 border-dragon-cream/80 rounded-lg overflow-hidden shadow-xl shadow-dragon-fire/10 hover:shadow-dragon-fire/30 transition-all duration-300 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48">
                   <img 
-                    src="https://images.unsplash.com/photo-1500673922987-e212871fec22" 
+                    src="/event-images/about-2.jpg" 
                     alt="Dragon Event" 
                     className="w-full h-full object-cover rounded-lg transform transition-transform hover:scale-105 duration-500"
                   />

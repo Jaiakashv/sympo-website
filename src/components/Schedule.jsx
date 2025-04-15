@@ -76,7 +76,7 @@ const scheduleData = {
     
     
     {
-      time: '11:00 AM - 2:00 PM',
+      time: '9:30 AM - 12:00 PM',
       title: 'IPL Mock Auction',
       location: 'TBD'
     },
