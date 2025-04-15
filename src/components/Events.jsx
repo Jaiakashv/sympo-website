@@ -15,7 +15,7 @@ const eventsData = {
       venue: 'TBD',
       team: '1-4 members',
       contact: 'nikhil-6369510662, s.sooriya-9176313108',
-      formLink: 'https://forms.gle/paper-presentation-form',
+      formLink: '',
       rules: [
         "Content should be original (plagiarism < 20%).",
         "Max 7-8 slides allowed.",
@@ -35,7 +35,7 @@ const eventsData = {
       venue: 'TBD',
       team: '1-3 members',
       contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
-      formLink: 'https://forms.gle/technical-quiz-form',
+      formLink: '',
       rules: [
         "Each question has a time limit.",
         "No use of mobile phones or external help.",

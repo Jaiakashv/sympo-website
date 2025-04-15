@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Clock, Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Instagram, X, Facebook, Linkedin, User } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,12 +16,12 @@ const Footer = () => {
             <h3 className="text-dragon-cream font-bold text-lg sm:text-xl">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <Mail className="text-dragon-fire mt-1 flex-shrink-0" size={18} />
-                <span className="text-dragon-cream/80 text-sm sm:text-base">mirai.enzan@mce.edu.in</span>
+                <User className="text-dragon-fire mt-1 flex-shrink-0" size={18} />
+                <span className="text-dragon-cream/80 text-sm sm:text-base">President: Harish , Abinaya</span>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="text-dragon-fire mt-1 flex-shrink-0" size={18} />
-                <span className="text-dragon-cream/80 text-sm sm:text-base">+91 98765 43210</span>
+                <span className="text-dragon-cream/80 text-sm sm:text-base">+91 70109 48116 & +91 89253 01438 </span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="text-dragon-fire mt-1 flex-shrink-0" size={18} />
@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-3">
                 <Clock className="text-dragon-fire mt-1 flex-shrink-0" size={18} />
-                <span className="text-dragon-cream/80 text-sm sm:text-base">9:00 AM - 5:00 PM</span>
+                <span className="text-dragon-cream/80 text-sm sm:text-base">9:00 AM - 4:00 PM</span>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-dragon-navy flex items-center justify-center text-dragon-cream/70 hover:text-dragon-fire hover:bg-dragon-navy/80 transition-all duration-300"
               >
-                <Twitter size={20} />
+                <X size={20} />
               </a>
               <a 
                 href="https://facebook.com" 
