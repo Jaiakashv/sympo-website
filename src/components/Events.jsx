@@ -32,7 +32,7 @@ const eventsData = {
       description: 'Test your technical knowledge and problem-solving skills in this fast-paced quiz covering various engineering topics.',
       host: 'Preetha P , Sree Nandhine N',
       date: 'April 25, 2025',
-      time: '9:00 AM - 11:00 PM',
+      time: '9:00 AM - 11:00 AM',
       venue: '5th Floor Rooom NO:510',
       team: '1-3 members',
       contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
