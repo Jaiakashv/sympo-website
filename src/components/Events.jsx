@@ -392,26 +392,6 @@ const eventsData = {
       ],
       prizes: ['First Prize', 'Second Prize']
     },
-    {
-      name: 'Fashion Show',
-      type: 'Exhibition',
-      image: '/event-images/fashion.jpg',
-      description: 'Showcase themed fashion designs, from wearable art to costume creations that embody elegance and creativity.',
-      host: 'Keerthana, Parvathi',
-      date: 'April 26, 2025',
-      time: '9:00 Am',
-      venue: 'Auditorium, Meenakshi College of Engineering',
-      team: '5 - 10',
-      contact: 'Keerthana-9566226865,parvathi-8428200539',
-      formLink: 'https://forms.gle/adaptune-form',
-      rules: [
-        "Themes will be provided or teams can choose their own.",
-        "No inappropriate outfits or offensive gestures.",
-        "Participants must maintain professionalism on stage.",
-        "Judging criteria: Creativity, confidence, outfit presentation, and team coordination."
-      ],
-      prizes: ['First Prize', 'Second Prize']
-    }
   ],
   sports: [
     {
