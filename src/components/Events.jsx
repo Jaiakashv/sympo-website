@@ -9,7 +9,7 @@ const eventsData = {
       type: 'Competition',
       image: '/event-images/paper-presentation.jpg',
       description: 'Present your research papers on innovative tech solutions and emerging technologies in specialized studies.',
-      host: 'Nikhil Srinivasan S,S.Sooriya',
+      host: 'Nikhil Srinivasan S, Soorya',
       date: 'April 25, 2025',
       time: '9:00 AM - 12:00 PM',
       venue: 'CSE LAB',
