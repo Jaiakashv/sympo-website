@@ -47,8 +47,8 @@ const About = () => {
                     <Users className="text-white animate-flame" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-dragon-cream">Industry Experts</h3>
-                    <p className="text-sm sm:text-base text-dragon-cream/70">Learn from leading professionals and industry veterans</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-dragon-cream">Networking with other Students</h3>
+                    <p className="text-sm sm:text-base text-dragon-cream/70">Network with other students & Learn new knowledge from them.</p>
                   </div>
                 </div>
                 
