@@ -422,7 +422,7 @@ const eventsData = {
       venue: 'MCE-TURF',
       team: 'Teams of 7',
       contact: 'Inbathamizhan +91 90808 83580,Jared Benson.S-9566079126',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       rules: [
         "bonafide certificate is Mandatory",
         "5+2 players",
@@ -444,7 +444,7 @@ const eventsData = {
       venue: 'Vani vidhyalaya court',
       team: 'solo',
       contact: 'Harish D 7358-591836,BHAGAVATHI GANESH ES 9025298871',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       rules: [
         "bonafide certificate is Mandatory",
         "Standard badminton rules apply.",
@@ -464,7 +464,7 @@ const eventsData = {
       venue: '5th floor-513',
       team: 'solo',
       contact: 'Srijith Kumar R- 80561 46992,Abinaya D - 89253 01438',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       rules: [
         "bonafide certificate is Mandatory",
         "Standard carrom board rules apply.",
@@ -484,7 +484,7 @@ const eventsData = {
       venue: '5th floor - 512',
       team: 'Solo',
       contact: 'Siva sankari - 73587 82004',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       rules: [
         "bonafide certificate is Mandatory",
         "Standard FIDE chess rules apply.",
@@ -504,7 +504,7 @@ const eventsData = {
       venue: '5th floor-514',
       team: 'Teams of 6',
       contact: 'Yuvaraj 73052 96377 , Durai Pandiyan 9025258855 ',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       isEsports: true,
       rules: [
         "Standard Free Fire tournament rules apply.",
@@ -524,7 +524,7 @@ const eventsData = {
       venue: '5th floor - 516(civil block)',
       team: 'Teams of 6',
       contact: 'Charles Prabakaran - 8056044498, Sanjay Kumar E- 6382369043',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       rules: [
         "Participants must complete challenges in the given time.",
         "Judges will assess form, stamina, and completion.",
@@ -544,7 +544,7 @@ const eventsData = {
       team: 'Teams of 6',
       contact: 'Asarudeen.A- 84283 87745 , Arun P.A 90252 58855',
       isEsports: true,
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       rules: [
         "Standard BGMI tournament rules apply.",
         "No use of third-party software or cheats.",
@@ -564,7 +564,7 @@ const eventsData = {
       venue: 'Meenakshi ground',
       team: 'Teams of 7 + 5 substitute',
       contact: '',
-      formLink: 'https://forms.gle/adaptune-form',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       rules: [
         "bonafide certificate is Mandatory",
         "Participants must complete challenges in the given time.",
