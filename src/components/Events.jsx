@@ -453,46 +453,7 @@ const eventsData = {
       ],
       prizes: ['First Prize', 'Second Prize']
     },
-    {
-      name: 'Carrom',
-      type: 'Competition',
-      image: '/event-images/carrom.jpg',
-      description: 'Test your precision and strategy in this tabletop game that combines elements of billiards, shuffleboard and checkers.',
-      host: 'Srijith Kumar R , Abinaya D',
-      date: 'April 25,2025',
-      time: '8:00 AM - 2:00 PM',
-      venue: '5th floor-513',
-      team: 'solo',
-      contact: 'Srijith Kumar R- 80561 46992,Abinaya D - 89253 01438',
-      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
-      rules: [
-        "bonafide certificate is Mandatory",
-        "Standard carrom board rules apply.",
-        "No external powder allowed.",
-        "Referee's decision is final."
-      ],
-      prizes: ['First Prize', 'Second Prize']
-    },
-    {
-      name: 'Chess',
-      type: 'Tournament',
-      image: '/event-images/chess.jpg',
-      description: 'Challenge your strategic thinking and foresight in this classic battle of minds on the checkered board.',
-      host: 'Siva sankari',
-      date: 'April 25,2025',
-      time: '8:00 AM - 2:00 PM',
-      venue: '5th floor - 512',
-      team: 'Solo',
-      contact: 'Siva sankari - 73587 82004',
-      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
-      rules: [
-        "bonafide certificate is Mandatory",
-        "Standard FIDE chess rules apply.",
-        "Players must not use external help (e.g., mobile phones).",
-        "Arbiter's decision is final."
-      ],
-      prizes: ['First Prize', 'Second Prize']
-    },
+    
     {
       name: 'FF-MAX',
       type: 'Esports',
@@ -513,25 +474,7 @@ const eventsData = {
       ],
       prizes: ['First Prize', 'Second Prize']
     },
-    {
-      name: 'CrossFit',
-      type: 'Competition',
-      image: '/event-images/cross.jpg',
-      description: 'Test your strength, endurance and overall fitness in this high-intensity functional training competition.',
-      host: 'Charles Prabakaran , Sanjay Kumar E ',
-      date: 'April 25,2025',
-      time: '8:00 AM - 2:00 PM',
-      venue: '5th floor - 516(civil block)',
-      team: 'Teams of 6',
-      contact: 'Charles Prabakaran - 8056044498, Sanjay Kumar E- 6382369043',
-      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
-      rules: [
-        "Participants must complete challenges in the given time.",
-        "Judges will assess form, stamina, and completion.",
-        "Any misconduct or failure to complete tasks = disqualification."
-      ],
-      prizes: ['First Prize', 'Second Prize']
-    },
+   
     {
       name: 'BGMI',
       type: 'Esports',

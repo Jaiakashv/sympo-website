@@ -43,11 +43,7 @@ const scheduleData = {
       title: 'FF-MAX & BGMI',
       location: '5th floor ( 514,515)'
     },
-    {
-      time: '9:00 AM - 12:00 PM',
-      title: 'Chess , Carrom , Cross fit',
-      location: '5th floor-512,513,516'
-    },
+ 
     
     
     
