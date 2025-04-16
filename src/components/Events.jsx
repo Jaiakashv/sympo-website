@@ -155,27 +155,7 @@ const eventsData = {
       ],
       prizes: ['First Prize', 'Second Prize']
     },
-    {
-      name: 'Debate',
-      type: 'Competition',
-      image: '/event-images/debate.jpg',
-      description: 'Engage in stimulating debates on contemporary topics, showcasing your persuasive skills and critical thinking.',
-      host: 'Sruthika S , Karthiks Selva',
-      date: 'April 26, 2025',
-      time: '11:00 AM - 1:00 PM',
-      venue: 'TBD',
-      team: 'Teams of 2',
-      contact: 'Sruthika S - 9345037764 , Karthiks Selva S - 8122289816  ',
-      formLink: 'https://forms.gle/wipygVN9U1otdZGS7',
-      rules: [
-        "College Id Card is Mandatory",
-        "Topics will be given on the spot or 15 minutes prior.",
-        "Each participant must present arguments for or against the topic.",
-        "Personal attacks or offensive language will lead to disqualification.",
-        "Judges evaluate based on clarity, logic, and delivery."
-      ],
-      prizes: ['First Prize', 'Second Prize']
-    },
+    
     {
       name: 'Portrait Painting',
       type: 'Art Competition',
