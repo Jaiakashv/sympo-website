@@ -77,7 +77,7 @@ const Footer = () => {
             <h3 className="text-dragon-cream font-bold text-lg sm:text-xl">Follow Us</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/mirai_enzan_2k25?igsh=cGs4cG5hZXk1cXJ3&utm_source=qr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-dragon-navy flex items-center justify-center text-dragon-cream/70 hover:text-dragon-fire hover:bg-dragon-navy/80 transition-all duration-300"
@@ -85,7 +85,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://www.instagram.com/mirai_enzan_2k25?igsh=cGs4cG5hZXk1cXJ3&utm_source=qr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-dragon-navy flex items-center justify-center text-dragon-cream/70 hover:text-dragon-fire hover:bg-dragon-navy/80 transition-all duration-300"
@@ -93,7 +93,7 @@ const Footer = () => {
                 <X size={20} />
               </a>
               <a 
-                href="https://facebook.com" 
+                href="https://www.instagram.com/mirai_enzan_2k25?igsh=cGs4cG5hZXk1cXJ3&utm_source=qr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-dragon-navy flex items-center justify-center text-dragon-cream/70 hover:text-dragon-fire hover:bg-dragon-navy/80 transition-all duration-300"
@@ -101,7 +101,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.instagram.com/mirai_enzan_2k25?igsh=cGs4cG5hZXk1cXJ3&utm_source=qr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-dragon-navy flex items-center justify-center text-dragon-cream/70 hover:text-dragon-fire hover:bg-dragon-navy/80 transition-all duration-300"
