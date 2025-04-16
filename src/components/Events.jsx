@@ -14,8 +14,8 @@ const eventsData = {
       time: '9:00 AM - 12:00 PM',
       venue: 'CSE LAB',
       team: '1-4 members',
-      contact: 'nikhil-6369510662, s.sooriya-9176313108',
-      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
+      contact: 'nikhil-6369510662, soorya-9176313108',
+      formLink: 'https://forms.gle/sVJn8JiSAUXAZ62U9',
       rules: [
         "College Id Card is Mandatory",
         "Content should be original (plagiarism < 20%).",
@@ -36,7 +36,7 @@ const eventsData = {
       venue: '5th Floor Rooom NO:510',
       team: '1-3 members',
       contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
-      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
+      formLink: 'https://forms.gle/CsNypUfQDuFVVTGN8',
       rules: [
         "College Id Card is Mandatory",
         "Each question has a time limit.",
@@ -57,7 +57,7 @@ const eventsData = {
       venue: 'CSE LAB',
       team: '2-3 members',
       contact: 'Ravi Vishnu -7305651782 ,Jaiakash V- 8122535240',
-      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
+      formLink: 'https://forms.gle/CsNypUfQDuFVVTGN8',
       rules: [
         "College Id Card is Mandatory",
         "Teams must develop a solution based on the given problem statement.",
@@ -80,7 +80,7 @@ const eventsData = {
       venue: 'CSE LAB',
       team: '1-2 members',
       contact: 'Lalitha Lochana G – 6382420560 ,Kamala Sruthi M - 9499979590',
-      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
+      formLink: 'https://forms.gle/CsNypUfQDuFVVTGN8',
       rules: [
         "College Id Card is Mandatory",
         "Participants must design a UI/UX prototype for a given problem statement.",
@@ -101,7 +101,7 @@ const eventsData = {
       venue: '5th Floor- 511',
       team: '1-2',
       contact: 'Yuva Shree B – 6382141895 , Thirumagal S – 9841888837',
-      formLink: 'https://forms.gle/BVdyqzxvzVi5y6cr7',
+      formLink: 'https://forms.gle/CsNypUfQDuFVVTGN8',
       rules: [
         "College Id Card is Mandatory",
         "Participants will be given buggy code and must debug it within the time limit.",
