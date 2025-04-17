@@ -64,11 +64,6 @@ const scheduleData = {
       title: 'Anime Quiz',
       location: '5th Floor -510'
     },
-    {
-      time: '11:00 AM - 12:00 PM',
-      title: 'Debate',
-      location: 'TBD'
-    },
     
     
     {

@@ -477,7 +477,7 @@ const eventsData = {
       prizes: ['First Prize', 'Second Prize']
     },
     {
-      name: 'ThrowBall',
+      name: 'ThrowBall (Girls Only)',
       type: 'Tournament',
       image: '/event-images/throw.jpg',
       description: 'Learn the skills and rules of throwball through fun drills, teamwork activities, and matches to boost fitness and coordination.',
