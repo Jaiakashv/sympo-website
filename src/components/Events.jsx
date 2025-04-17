@@ -485,14 +485,14 @@ const eventsData = {
       date: 'April 25,2025',
       time: '8:00 AM - 2:00 PM',
       venue: 'Meenakshi ground',
-      team: 'Teams of 7 + 5 substitute',
+      team: 'Teams of 9 + 3 (substitute)',
       contact: 'Nandhini +91 93452 20590 , Keerthana +91 95662 26865',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       rules: [
         "bonafide certificate is Mandatory",
-        "Participants must complete challenges in the given time.",
-        "Judges will assess form, stamina, and completion.",
-        "Any misconduct or failure to complete tasks = disqualification."
+        "Participants must be on Time",
+        "Rules will be informed before the match by officials"
+        
       ],
       prizes: ['First Prize', 'Second Prize']
     },
