@@ -30,12 +30,12 @@ const eventsData = {
       type: 'Quiz',
       image: '/event-images/tech-quiz.jpg',
       description: 'Test your technical knowledge and problem-solving skills in this fast-paced quiz covering various engineering topics.',
-      host: 'Preetha P , Sree Nandhine N',
+      host: 'Preetha P , Muthu Jayashree',
       date: 'April 25, 2025',
       time: '9:00 AM - 11:00 AM',
       venue: '5th Floor Rooom NO:510',
       team: '1-3 members',
-      contact: 'Preetha P – 9962406764, Sree Nandhine N – 9025645542',
+      contact: 'Preetha P – 9962406764,Muthu Jayashree- 8610280153',
       formLink: 'https://forms.gle/CsNypUfQDuFVVTGN8',
       rules: [
         "College Id Card is Mandatory",
@@ -51,12 +51,12 @@ const eventsData = {
       type: 'Competition',
       image: '/event-images/hack.jpg',
       description: 'A 6-hour coding marathon to develop innovative solutions for complex challenges and technological problems.',
-      host: 'Ravi Vishnu D , Jaiakash V ',
+      host: 'Jaiakash V , Sanjana ',
       date: 'April 25, 2025',
       time: '9:00 AM - 12:30 PM',
       venue: 'CSE LAB',
       team: '2-3 members',
-      contact: 'Ravi Vishnu -7305651782 ,Jaiakash V- 8122535240',
+      contact: 'Sanjana-9940448141 ,Jaiakash V- 8122535240',
       formLink: 'https://forms.gle/CsNypUfQDuFVVTGN8',
       rules: [
         "College Id Card is Mandatory",
@@ -444,7 +444,7 @@ const eventsData = {
       time: '10:00 AM - 12:00 PM',
       venue: '5th floor-514',
       team: 'Teams of 6',
-      contact: 'Yuvaraj 73052 96377 , Durai Pandiyan 9025258855 ',
+      contact: 'Yuvaraj 73052 96377 , Durai Pandiyan +91 6379258185 ',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdlJ9Mt-ZHvLXerO-CMRuavzIFSTjBzAXjUlfIIh6_uP2XdmQ/viewform?usp=header',
       isEsports: true,
       rules: [
@@ -491,7 +491,10 @@ const eventsData = {
       rules: [
         "bonafide certificate is Mandatory",
         "Participants must be on Time",
-        "Rules will be informed before the match by officials"
+        "Rules will be informed before the match by officials",
+        "BODY TOUCHES, BALL CARRY, SHIFTING - NOT ALLOWED. ",
+        "LINE CROSS, UNDER ARM SERVE,SECOND TOUCH IN SERVE AND SERVE IN NO MAN AREA - NOT ALLOWED.",
+        "ARGUING TEAM WILL  BE DISQUALIFIED."
         
       ],
       prizes: ['First Prize', 'Second Prize']
